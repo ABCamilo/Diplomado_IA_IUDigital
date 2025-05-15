@@ -59,9 +59,5 @@ extra_css:
  - css/custom.css
 nav:
   - Presentación del curso: index.md
-<<<<<<< HEAD
-  - Unidad 1: Unidad 1/index.md
-=======
   - Unidad 1: Unidad 1/index.md
   - Unidad 2: Unidad2/unidad2.md
->>>>>>> unidad2
