@@ -196,7 +196,8 @@ Para comenzar a trabajar con la API de OpenAI, primero debes importar la librer�
 
 ```python
 import openai
-from openai import OpenAI ```
+from openai import OpenAI 
+```
 
 Luego, debes cargar la llave desde un archivo `.env` para mantenerla oculta y segura:
 
@@ -226,7 +227,8 @@ def get_chat_completion(prompt, model=llm_model):
         messages=[{"role": "user", "content": prompt}]
     )
     
-    return chat_completion.choices[0].message.content  # Devuelve la respuesta del modelo```
+    return chat_completion.choices[0].message.content  # Devuelve la respuesta del modelo
+```
     
 
 La función `get_chat_completion` la utilizaremos para interactuar con el modelo de OpenAI y obtener una respuesta a partir de un mensaje proporcionado. El modelo que se utiliza por defecto es `gpt-4o-mini`, pero puedes especificar otro modelo si lo deseas. La lista completa de modelos puedes consultarla en la [documentación oficial de OpenAI](https://platform.openai.com/docs/models).
@@ -738,7 +740,7 @@ E instanciamos la cadena como:
 ```python
 chain = prompt | llm_gpt4  # Create the chain```
 
-Es como decir: *"Toma este prompt y pásalo al LLM."*
+Es como decir: *"Toma este prompt y pásalo al LLM."
 
 Y ejecutamos la cadena como:
 
