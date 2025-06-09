@@ -1,0 +1,1713 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Diplomado en Aplicaciones asistidas por IA">
+      
+      
+        <meta name="author" content="Intitucion iniversitaria Digital de Antioquia">
+      
+      
+        <link rel="canonical" href="https://sitename.example/Unidad3/unidad3/">
+      
+      
+        <link rel="prev" href="../../Unidad2/unidad2/">
+      
+      
+      
+      <link rel="icon" href="../../assets/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.8">
+    
+    
+      
+        <title>Unidad 3 - Diplomado en Aplicaciones asistidas por IA</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.8608ea7d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,700,700i%7CRed+Hat+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Montserrat";--md-code-font:"Red Hat Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/custom.css">
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="green" data-md-color-accent="deep-purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#unidad-3-proyecto-integtrador-construccion-y-depliegue-de-un-sisitema-rag" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Diplomado en Aplicaciones asistidas por IA" class="md-header__button md-logo" aria-label="Diplomado en Aplicaciones asistidas por IA" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a2 2 0 0 1 2 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 0 1 7 7h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v1a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-1H2a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1a7 7 0 0 1 7-7h1V5.73c-.6-.34-1-.99-1-1.73a2 2 0 0 1 2-2M7.5 13A2.5 2.5 0 0 0 5 15.5 2.5 2.5 0 0 0 7.5 18a2.5 2.5 0 0 0 2.5-2.5A2.5 2.5 0 0 0 7.5 13m9 0a2.5 2.5 0 0 0-2.5 2.5 2.5 2.5 0 0 0 2.5 2.5 2.5 2.5 0 0 0 2.5-2.5 2.5 2.5 0 0 0-2.5-2.5"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Diplomado en Aplicaciones asistidas por IA
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Unidad 3
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="green" data-md-color-accent="deep-purple"  aria-label="Dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="deep-orange"  aria-label="Light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Diplomado en Aplicaciones asistidas por IA" class="md-nav__button md-logo" aria-label="Diplomado en Aplicaciones asistidas por IA" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a2 2 0 0 1 2 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 0 1 7 7h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v1a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-1H2a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1a7 7 0 0 1 7-7h1V5.73c-.6-.34-1-.99-1-1.73a2 2 0 0 1 2-2M7.5 13A2.5 2.5 0 0 0 5 15.5 2.5 2.5 0 0 0 7.5 18a2.5 2.5 0 0 0 2.5-2.5A2.5 2.5 0 0 0 7.5 13m9 0a2.5 2.5 0 0 0-2.5 2.5 2.5 2.5 0 0 0 2.5 2.5 2.5 2.5 0 0 0 2.5-2.5 2.5 2.5 0 0 0-2.5-2.5"/></svg>
+
+    </a>
+    Diplomado en Aplicaciones asistidas por IA
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Presentación del curso
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Unidad%201/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unidad 1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Unidad2/unidad2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unidad 2
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Unidad 3
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Unidad 3
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduccion-a-la-unidad" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introducción a la unidad
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cronograma-de-actividades-unidad-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cronograma de actividades - Unidad 1
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#retival-aumented-generation-rag" class="md-nav__link">
+    <span class="md-ellipsis">
+      Retival Aumented generation (RAG)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cargadores-de-documentos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cargadores de Documentos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#categorias-y-ejemplos-de-cargadores-de-documentos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Categorías y Ejemplos de Cargadores de Documentos
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Categorías y Ejemplos de Cargadores de Documentos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cargadores-basados-en-archivos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cargadores Basados en Archivos:
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cargadores Basados en Archivos:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#documentos-pdf" class="md-nav__link">
+    <span class="md-ellipsis">
+      Documentos PDF
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Documentos PDF">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pypdfloader" class="md-nav__link">
+    <span class="md-ellipsis">
+      PyPDFLoader
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unstructured" class="md-nav__link">
+    <span class="md-ellipsis">
+      Unstructured
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#web-based" class="md-nav__link">
+    <span class="md-ellipsis">
+      Web Based
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Web Based">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#youtube" class="md-nav__link">
+    <span class="md-ellipsis">
+      YouTube
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#text-splitters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Text Splitters
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Text Splitters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#recursivecharactertextsplitter" class="md-nav__link">
+    <span class="md-ellipsis">
+      RecursiveCharacterTextSplitter
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#almacenamiento-en-la-base-de-datos-vectorial" class="md-nav__link">
+    <span class="md-ellipsis">
+      Almacenamiento en la base de datos vectorial
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Almacenamiento en la base de datos vectorial">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#embeddings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Embeddings
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creando-la-vectorstore" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creando la Vectorstore
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creando-labase-de-datos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creando labase de datos
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduccion-a-la-unidad" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introducción a la unidad
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cronograma-de-actividades-unidad-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cronograma de actividades - Unidad 1
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#retival-aumented-generation-rag" class="md-nav__link">
+    <span class="md-ellipsis">
+      Retival Aumented generation (RAG)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cargadores-de-documentos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cargadores de Documentos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#categorias-y-ejemplos-de-cargadores-de-documentos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Categorías y Ejemplos de Cargadores de Documentos
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Categorías y Ejemplos de Cargadores de Documentos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cargadores-basados-en-archivos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cargadores Basados en Archivos:
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cargadores Basados en Archivos:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#documentos-pdf" class="md-nav__link">
+    <span class="md-ellipsis">
+      Documentos PDF
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Documentos PDF">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pypdfloader" class="md-nav__link">
+    <span class="md-ellipsis">
+      PyPDFLoader
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unstructured" class="md-nav__link">
+    <span class="md-ellipsis">
+      Unstructured
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#web-based" class="md-nav__link">
+    <span class="md-ellipsis">
+      Web Based
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Web Based">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#youtube" class="md-nav__link">
+    <span class="md-ellipsis">
+      YouTube
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#text-splitters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Text Splitters
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Text Splitters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#recursivecharactertextsplitter" class="md-nav__link">
+    <span class="md-ellipsis">
+      RecursiveCharacterTextSplitter
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#almacenamiento-en-la-base-de-datos-vectorial" class="md-nav__link">
+    <span class="md-ellipsis">
+      Almacenamiento en la base de datos vectorial
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Almacenamiento en la base de datos vectorial">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#embeddings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Embeddings
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creando-la-vectorstore" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creando la Vectorstore
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creando-labase-de-datos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creando labase de datos
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<!--  Nombre de la Unidad __
+-->
+
+<h1 id="unidad-3-proyecto-integtrador-construccion-y-depliegue-de-un-sisitema-rag">Unidad 3: Proyecto Integtrador. Construcción y depliegue de un sisitema RAG</h1>
+<!--
+Introducción a la unidad
+Teniendo en cuenta que cada unidad es un saber específico, en la introducción se destaca la importancia y relevancia del saber que se abordará en función de los resultados de aprendizaje planteados. Describe brevemente cómo el tema central de la unidad se integra en el panorama más amplio del aprendizaje y de la vida cotidiana o profesional del estudiante. Su propósito es despertar la curiosidad y el interés del estudiante sobre los contenidos que explorará.
+
+En definitiva, se trata de responder a las preguntas: ¿Qué va a aprender el estudiante? ¿Cómo lo va a aprender? ¿Para qué lo va a aprender?  
+
+
+
+
+Recomendaciones:
+Inicia presentando al estudiante cómo se relaciona el conocimiento de la unidad con su contexto. 
+Incluye el propósito de la unidad y lo que el estudiante aprenderá mediante su estudio.
+Vale la pena destacar algunos de los temas más importantes que se abordarán.
+Procura no superar las 300 palabras (1500 caracteres) al redactar la introducción.
+-->
+
+<h2 id="introduccion-a-la-unidad">Introducción a la unidad</h2>
+<p>Bienvenodos a la última unidad de nuestro curso sobre aplicacionea asistidas por LLMs. En esta unidad aperndereos sobre dument loaders y deplegaremos una aplicación Rag funcional para conversar con alrchivos en pdf.</p>
+<!-- Resultados de aprendizaje
+Los objetos de aprendizaje se asumen como aquello que los estudiantes serán capaces de hacer a partir de lo que aprendieron a lo largo de la unidad.
+
+
+Recomendaciones:
+Formula máximo dos resultados por unidad. 
+Asegúrate que tengan relación con los objetivos de aprendizaje planteados en la carta descriptiva. 
+Redacta los resultados a partir de tres elementos: qué, cómo y para qué.
+Recuerda que los resultados se establecen en función del aprendizaje, no de la enseñanza. 
+Utiliza verbos conjugados en presente (describen la acción).  
+Los resultados deben ser medibles y alcanzables. 
+
+-->
+
+<h2 id="cronograma-de-actividades-unidad-1">Cronograma de actividades - Unidad 1</h2>
+<table>
+<thead>
+<tr>
+<th>Actividad de aprendizaje</th>
+<th>Evidencia de aprendizaje</th>
+<th>Semana</th>
+<th>Ponderación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Reto Formativo 1 y 2</td>
+<td>EA1:  Templates y Output Parsers</td>
+<td>Semana 1, 2 y 3</td>
+<td>25%</td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td></td>
+<td></td>
+<td><strong>25 %</strong></td>
+</tr>
+</tbody>
+</table>
+<!--
+Desarrollo temático
+Aquí comienza la elaboración del contenido que hará parte de la unidad temática. Para ello, es preciso identificar qué requiere el estudiante para aprender y comprender aquello que debe explorar, desarrollar nuevas habilidades, aplicar el conocimiento y cumplir con los resultados de aprendizaje. 
+
+Los textos se construyen con cohesión y claridad, de manera que facilite al estudiante apropiarse del conocimiento de manera efectiva. Esta elaboración debe estar respaldada por enfoques didácticos, garantizando un proceso de aprendizaje sólido y bien fundamentado.
+
+
+
+
+Recomendaciones:
+Ten en cuenta las siguientes recomendaciones para desarrollar las temáticas de la actividad de aprendizaje:
+Lee el documento “Manual del contenidista” en el cual encontrarás consejos para redactar los contenidos.
+Ten a la mano el “Manual de redacción” para resolver dudas o inquietudes sobre el uso de las normas APA para citas y referencias. 
+Cada unidad debe tener una cantidad mínima de 30 páginas de contenido temático. Esto equivale aproximadamente a 8500 palabras, en Arial 12, espaciado 1.0 y texto justificado. 
+El desarrollo del contenido requiere un 70 % de producción propia y un 30 % para contenidos de terceros (fuentes primarias). Monitorea permanentemente tu documento con ayuda de la herramienta Turnitin para revisar el porcentaje de similitud.
+Los textos e imágenes de terceros obligatoriamente se deben citar y referenciar, procurando que no superen el porcentaje exigido (30 %). Debes suministrar los enlaces de los recursos digitales empleados (PDF, sitios web, artículos online, videos, imágenes, etc.). Todos estos recursos deben ser de uso libre.
+No incluir artículos, tesis, textos o documentos propios que han sido previamente publicados o presentados a otra institución. 
+Los recursos como imágenes, infografías, ilustraciones, tablas, etc., no hacen parte de las 30 páginas del desarrollo de contenido.
+Las figuras propias deben ser editables y se entregan en una carpeta aparte, cuidando que tengan el nombre y número correspondiente. 
+Las fuentes se pueden tomar de bases de datos de suscripción como EBSCO o de uso libre como Redalyc y Google Académico, las cuales cuentas con licencia Creative Commons (LCC) para su reproducción (solicitar el acceso a los repositorios en caso de no tenerlo).
+Organiza y jerarquiza los temas y subtemas numéricamente.
+
+-->
+
+<!-- Your content for this section goes here -->
+
+<h2 id="retival-aumented-generation-rag">Retival Aumented generation (RAG)</h2>
+<p>El desempeño de un modelo de lenguaje en un tópico particular depende de cuánto haya visto datos sobre este tópico en su proceso de entrenamiento. Si un tema no aparece mucho en internet, el modelo tiene una capacidad limitada para responder preguntas sobre este, mientras que si este tema es muy bien difundido, el desempeño del modelo en este tipo de temas será mucho mejor. Por otro lado, existe información que el modelo nunca vio, por ejemplo, los contratos de compraventa de una empresa que se dedica a la venta de casas, los decretos y ordenanzas que los gobiernos emitieron después de la última actualización del modelo, etc.</p>
+<p>En una RAG, un LLM recupera documentos contextuales a partir de una base de datos externa como parte de su ejecución. Esto es útil si queremos hacer preguntas sobre documentos específicos. La figura muestra el esquema general de una aplicación RAG.
+<img alt="Esquema de flujo de una aplicación RAG" src="../../assets/images/rag1.png" width=" " />
+<em>Esquema de flujo de una aplicación RAG. Fuente: <a href="https://python.langchain.com/docs/concepts/rag/">LangChain Documentation</a>.</em></p>
+<p>El sistema de Recuperación (Retrieval) es el encargado de devolver los documentos relevantes para que el LMM (Modelo de Lenguaje de Máquina) elabore la respuesta a partir de una solicitud. Este sistema está compuesto por tres subsistemas:</p>
+<ul>
+<li><strong>Cargador de Documentos (Document Loader):</strong> Carga documentos desde diversas fuentes, como archivos locales, sitios web, bases de datos, etc.</li>
+<li><strong>Divisor de Texto (Text Splitter):</strong> Divide los documentos en fragmentos manejables para su procesamiento.</li>
+<li><strong>Almacén Vectorial (Vector Store):</strong> Almacena representaciones vectoriales de los documentos para una recuperación eficiente.</li>
+</ul>
+<p>La Figura ilustra cómo estos subsistemas interactúan en el pipeline de RAG:</p>
+<p><img alt="Esquema de los subsistemas acoplados al sistema de Recuperación" id="fig-retrieval-subsystems" src="../../assets/images/retrival_subsystems.png" />
+<em>Fuente: <a href="https://www.deeplearning.ai/short-courses/chat-with-your-data/">Curso "Chat with Your Data" de DeepLearning.AI</a>.</em><!-- Nota para edición: Por favor construit ua imagen propia--></p>
+<h2 id="cargadores-de-documentos">Cargadores de Documentos</h2>
+<p>Comenzaremos experimentando con algunas de las herramientas de carga de documentos disponibles. Es importante resaltar que existe una gran variedad, como lo ilustra la imagen:</p>
+<p><img alt="alt text" src="../../assets/images/doc_loaders.png" />
+<em>Fuente: <a href="https://www.deeplearning.ai/short-courses/chat-with-your-data/">Curso "Chat with Your Data" de DeepLearning.AI</a>.</em></p>
+<p>En esencia, un Cargador de Documentos en LangChain es un componente que obtiene datos de una fuente especificada y los transforma en un formato estandarizado que LangChain puede entender y con el que puede trabajar. Este formato estandarizado es típicamente un objeto Documento.</p>
+<p>Una vez que un cargador de documentos ingiere datos, usualmente los transforma en uno o más objetos Documento. Piensa en esto como nuestro contenedor estandarizado para datos de texto. Un objeto Documento en LangChain consiste principalmente en dos atributos clave:</p>
+<ul>
+<li>
+<p><strong>page_content:</strong> Contiene el contenido de texto real del documento o un fragmento de él.</p>
+</li>
+<li>
+<p><strong>metadata (diccionario):</strong> Es un diccionario que contiene información adicional sobre el contenido. ¡Esto es muy importante! Los metadatos pueden incluir cosas como:</p>
+<ul>
+<li>La fuente del documento (por ejemplo, nombre del archivo, URL, ID de base de datos)</li>
+<li>Fecha de creación, autor</li>
+<li>Número de página (para PDFs)</li>
+<li>Títulos de secciones específicas</li>
+<li>Cualquier otra información contextual que consideres relevante.</li>
+</ul>
+</li>
+</ul>
+<p>El uso efectivo de metadatos puede mejorar significativamente la capacidad de tu aplicación para filtrar, buscar y entender el contexto de la información.</p>
+<h2 id="categorias-y-ejemplos-de-cargadores-de-documentos">Categorías y Ejemplos de Cargadores de Documentos</h2>
+<p>LangChain ofrece un vasto ecosistema de cargadores de documentos, ¡actualmente más de 80, y la comunidad sigue añadiendo más! Exploremos algunos:</p>
+<h3 id="cargadores-basados-en-archivos">Cargadores Basados en Archivos:</h3>
+<p>Estos cargadores leen datos directamente de archivos. Vemos algunos:</p>
+<h4 id="documentos-pdf">Documentos PDF</h4>
+<h5 id="pypdfloader"><code>PyPDFLoader</code></h5>
+<p>Una de las herramientas diponibles para carga de documentos en PDF es  <code>PyPDFLoader</code>. Este cargador extrae texto y metadatos de archivos PDF basados en texto, es decir, no es apropiado si el PDF es un escaneo de una imagen. Supongamos que nuestro texto lo tenemos en la carpeta de contenidos <code>./content</code>. En este caso, cargaremos el archivo <a href="../../assets/documents/attention.pdf">attention.pdf</a> de la siguiente manera:</p>
+<p><div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">langchain.document_loaders</span><span class="w"> </span><span class="kn">import</span> <span class="n">PyPDFLoader</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="n">output_path</span> <span class="o">=</span> <span class="s2">&quot;./content/&quot;</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="n">file_path</span> <span class="o">=</span> <span class="n">output_path</span> <span class="o">+</span> <span class="s1">&#39;attention.pdf&#39;</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="n">loader</span> <span class="o">=</span> <span class="n">PyPDFLoader</span><span class="p">(</span><span class="n">file_path</span><span class="p">)</span>  <span class="c1"># Instancia del cargador.</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="n">pages</span> <span class="o">=</span> <span class="n">loader</span><span class="o">.</span><span class="n">load</span><span class="p">()</span>
+</span></code></pre></div>
+La línea <code>pages = loader.load()</code> ejecuta el método <code>.load()</code>, que lee el PDF y devuelve una lista de objetos <code>Document</code>. Cada <code>Document</code> representa una página del PDF, con <code>page_content</code> (el texto extraído) y <code>metadata</code> (información como la fuente y el número de página).</p>
+<p><code>pages</code> será una lista de objetos <code>Document</code>.<br />
+Cada <code>Document</code> tendrá:
+- <code>page_content</code>: El texto extraído de una página del PDF.
+- <code>metadata</code>: Un diccionario con información como <code>{"source": "./content/attention.pdf", "page": n}</code> (donde <code>n</code> es el número de página, comenzando desde 0).</p>
+<p>Podemos inspeccionar el contenido cargado:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Código</label><label for="__tabbed_1_2">Salida</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">pages</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<p><div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="o">[</span>&lt;Document<span class="w"> </span><span class="nv">page_content</span><span class="o">=</span><span class="s2">&quot;Texto de la página 1&quot;</span><span class="w"> </span><span class="nv">metadata</span><span class="o">={</span><span class="s2">&quot;source&quot;</span>:<span class="w"> </span><span class="s2">&quot;./content/attention.pdf&quot;</span>,<span class="w"> </span><span class="s2">&quot;page&quot;</span>:<span class="w"> </span><span class="m">0</span><span class="o">}</span>&gt;,
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>&lt;Document<span class="w"> </span><span class="nv">page_content</span><span class="o">=</span><span class="s2">&quot;Texto de la página 2&quot;</span><span class="w"> </span><span class="nv">metadata</span><span class="o">={</span><span class="s2">&quot;source&quot;</span>:<span class="w"> </span><span class="s2">&quot;./content/attention.pdf&quot;</span>,<span class="w"> </span><span class="s2">&quot;page&quot;</span>:<span class="w"> </span><span class="m">1</span><span class="o">}</span>&gt;,
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>...<span class="o">]</span>
+</span></code></pre></div>
+<img alt="alt text" src="../../assets/images/pages.png" /></p>
+</div>
+</div>
+</div>
+<p>Así, por ejemplo, podremos acceder al contenido cargado de la primera página haciendo:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Código</label><label for="__tabbed_2_2">Salida</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">first_page</span> <span class="o">=</span> <span class="n">pages</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Contenido de la primera página:&quot;</span><span class="p">)</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">first_page</span><span class="o">.</span><span class="n">page_content</span><span class="p">)</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>Contenido<span class="w"> </span>de<span class="w"> </span>la<span class="w"> </span>primera<span class="w"> </span>página:
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>Provided<span class="w"> </span>proper<span class="w"> </span>attribution<span class="w"> </span>is<span class="w"> </span>provided,<span class="w"> </span>Google<span class="w"> </span>hereby<span class="w"> </span>grants<span class="w"> </span>permission<span class="w"> </span>to
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>reproduce<span class="w"> </span>the<span class="w"> </span>tables<span class="w"> </span>and<span class="w"> </span>figures<span class="w"> </span><span class="k">in</span><span class="w"> </span>this<span class="w"> </span>paper<span class="w"> </span>solely<span class="w"> </span><span class="k">for</span><span class="w"> </span>use<span class="w"> </span><span class="k">in</span><span class="w"> </span>journalistic<span class="w"> </span>or
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>scholarly<span class="w"> </span>works.
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>Attention<span class="w"> </span>Is<span class="w"> </span>All<span class="w"> </span>You<span class="w"> </span>Need
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>Ashish<span class="w"> </span>Vaswani∗
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>Google<span class="w"> </span>Brain
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>avaswani@google.com
+</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>Noam<span class="w"> </span>Shazeer∗
+</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a>Google<span class="w"> </span>Brain
+</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a>noam@google.com
+</span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a>Niki<span class="w"> </span>Parmar∗
+</span><span id="__span-4-13"><a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a>Google<span class="w"> </span>Research
+</span><span id="__span-4-14"><a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a>nikip@google.com
+</span><span id="__span-4-15"><a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a>Jakob<span class="w"> </span>Uszkoreit∗
+</span><span id="__span-4-16"><a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a>Google<span class="w"> </span>Research
+</span><span id="__span-4-17"><a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a>usz@google.com
+</span><span id="__span-4-18"><a id="__codelineno-4-18" name="__codelineno-4-18" href="#__codelineno-4-18"></a>Llion<span class="w"> </span>Jones∗
+</span><span id="__span-4-19"><a id="__codelineno-4-19" name="__codelineno-4-19" href="#__codelineno-4-19"></a>Google<span class="w"> </span>Research
+</span><span id="__span-4-20"><a id="__codelineno-4-20" name="__codelineno-4-20" href="#__codelineno-4-20"></a>llion@google.com
+</span><span id="__span-4-21"><a id="__codelineno-4-21" name="__codelineno-4-21" href="#__codelineno-4-21"></a>Aidan<span class="w"> </span>N.<span class="w"> </span>Gomez∗<span class="w"> </span>†
+</span><span id="__span-4-22"><a id="__codelineno-4-22" name="__codelineno-4-22" href="#__codelineno-4-22"></a>University<span class="w"> </span>of<span class="w"> </span>Toronto
+</span><span id="__span-4-23"><a id="__codelineno-4-23" name="__codelineno-4-23" href="#__codelineno-4-23"></a>aidan@cs.toronto.edu
+</span><span id="__span-4-24"><a id="__codelineno-4-24" name="__codelineno-4-24" href="#__codelineno-4-24"></a>Łukasz<span class="w"> </span>Kaiser∗
+</span><span id="__span-4-25"><a id="__codelineno-4-25" name="__codelineno-4-25" href="#__codelineno-4-25"></a>Google<span class="w"> </span>Brain
+</span><span id="__span-4-26"><a id="__codelineno-4-26" name="__codelineno-4-26" href="#__codelineno-4-26"></a>...
+</span><span id="__span-4-27"><a id="__codelineno-4-27" name="__codelineno-4-27" href="#__codelineno-4-27"></a>†Work<span class="w"> </span>performed<span class="w"> </span><span class="k">while</span><span class="w"> </span>at<span class="w"> </span>Google<span class="w"> </span>Brain.
+</span><span id="__span-4-28"><a id="__codelineno-4-28" name="__codelineno-4-28" href="#__codelineno-4-28"></a>‡Work<span class="w"> </span>performed<span class="w"> </span><span class="k">while</span><span class="w"> </span>at<span class="w"> </span>Google<span class="w"> </span>Research.
+</span><span id="__span-4-29"><a id="__codelineno-4-29" name="__codelineno-4-29" href="#__codelineno-4-29"></a>31st<span class="w"> </span>Conference<span class="w"> </span>on<span class="w"> </span>Neural<span class="w"> </span>Information<span class="w"> </span>Processing<span class="w"> </span>Systems<span class="w"> </span><span class="o">(</span>NIPS<span class="w"> </span><span class="m">2017</span><span class="o">)</span>,<span class="w"> </span>Long<span class="w"> </span>Beach,<span class="w"> </span>CA,<span class="w"> </span>USA.
+</span><span id="__span-4-30"><a id="__codelineno-4-30" name="__codelineno-4-30" href="#__codelineno-4-30"></a>arXiv:1706.03762v7<span class="w">  </span><span class="o">[</span>cs.CL<span class="o">]</span><span class="w">  </span><span class="m">2</span><span class="w"> </span>Aug<span class="w"> </span><span class="m">2023</span>
+</span></code></pre></div>
+</div>
+</div>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">📖 Para aprender más</p>
+<p>Puedes conocer más cargadores de documentos PDF consultando la documentación de LangChain en:
+<a href="https://python.langchain.com/docs/integrations/document_loaders/#pdfs">How to: load PDF files.</a></p>
+</div>
+<h5 id="unstructured">Unstructured</h5>
+<p>El cargador de documentos Unstructured se utiliza para cargar archivos de muchos tipos. Actualmente, Unstructured admite la carga de archivos de texto, presentaciones de PowerPoint, HTML, PDFs, imágenes y más.</p>
+<p>El paquete Unstructured de Unstructured.IO extrae texto limpio de documentos fuente como PDFs y documentos de Word.</p>
+<div class="admonition warning">
+<p class="admonition-title">Para tener en cuenta</p>
+<p>La API de Unstructured requiere claves de API para realizar solicitudes para opciones más avanzadas. Puedes solicitar una clave de API <a href="https://unstructured.io/enterprise">aquí</a> y comenzar a usarla.</p>
+</div>
+<p>Para ilustrar su uso, usaremos el mismo archivo PDF del ejemplo anterior:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">unstructured.partition.pdf</span><span class="w"> </span><span class="kn">import</span> <span class="n">partition_pdf</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="n">output_path</span> <span class="o">=</span> <span class="s2">&quot;.content/&quot;</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="n">file_path</span> <span class="o">=</span> <span class="n">output_path</span> <span class="o">+</span> <span class="s1">&#39;attention.pdf&#39;</span>
+</span></code></pre></div>
+<p>En su forma más básica, sin ninguna configuración adicional, podemos cargar el documento como:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="c1"># Carga y procesa el pdf con la configuración básica</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="n">chunks</span> <span class="o">=</span> <span class="n">partition_pdf</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="n">file_path</span><span class="p">)</span>
+</span></code></pre></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:1"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">Salida</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="o">[</span>&lt;unstructured.documents.elements.Text<span class="w"> </span>at<span class="w"> </span>0x702efe8e0a60&gt;,
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>&lt;unstructured.documents.elements.NarrativeText<span class="w"> </span>at<span class="w"> </span>0x702efe8e0ac0&gt;,
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>...
+</span></code></pre></div>
+</div>
+</div>
+</div>
+<p>Visualicemos los documentos extraídos:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="c1"># Muestra los elementos extraídos</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="k">for</span> <span class="n">chunk</span> <span class="ow">in</span> <span class="n">chunks</span><span class="p">:</span>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">chunk</span><span class="p">)</span>
+</span></code></pre></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="4:1"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">Salida</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="m">3</span><span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="m">0</span><span class="w"> </span><span class="m">2</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>g<span class="w"> </span>u<span class="w"> </span>A<span class="w"> </span><span class="m">2</span>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="o">]</span><span class="w"> </span>L<span class="w"> </span>C<span class="w"> </span>.<span class="w"> </span>s<span class="w"> </span>c<span class="w"> </span><span class="o">[</span>
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>...
+</span></code></pre></div>
+</div>
+</div>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">📖 Para aprender más</p>
+<p>Puedes explorar las diferentes funcionalidades de carga en el siguiente enlace:
+<a href="https://docs.unstructured.io/open-source/core-functionality/chunking">Documentación de Unstructured</a></p>
+</div>
+<p>Para un mayor control sobre la forma en que podemos extraer los diferentes tipos de datos del PDF, podemos configurar la función <code>partition_pdf</code> de la siguiente manera:</p>
+<p><div class="language-python highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="n">chunks</span> <span class="o">=</span> <span class="n">partition_pdf</span><span class="p">(</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>    <span class="n">filename</span><span class="o">=</span><span class="n">file_path</span><span class="p">,</span>
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>    <span class="n">infer_table_structure</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>            <span class="c1"># Extraer tablas</span>
+</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>    <span class="n">strategy</span><span class="o">=</span><span class="s2">&quot;hi_res&quot;</span><span class="p">,</span>                     <span class="c1"># Necesario para inferir tablas</span>
+</span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>
+</span><span id="__span-10-6"><a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a>    <span class="n">extract_image_block_types</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;Image&quot;</span><span class="p">],</span>   <span class="c1"># Agregar &#39;Table&#39; para extraer imágenes de tablas</span>
+</span><span id="__span-10-7"><a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a>    <span class="c1"># image_output_dir_path=output_path,   # Si es None, las imágenes y tablas se guardarán en base64</span>
+</span><span id="__span-10-8"><a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a>
+</span><span id="__span-10-9"><a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a>    <span class="n">extract_image_block_to_payload</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>   <span class="c1"># Si es True, extraerá base64 para uso en API</span>
+</span><span id="__span-10-10"><a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a>
+</span><span id="__span-10-11"><a id="__codelineno-10-11" name="__codelineno-10-11" href="#__codelineno-10-11"></a>    <span class="n">chunking_strategy</span><span class="o">=</span><span class="s2">&quot;by_title&quot;</span><span class="p">,</span>          <span class="c1"># O &#39;basic&#39;</span>
+</span><span id="__span-10-12"><a id="__codelineno-10-12" name="__codelineno-10-12" href="#__codelineno-10-12"></a>    <span class="n">max_characters</span><span class="o">=</span><span class="mi">10000</span><span class="p">,</span>                  <span class="c1"># Por defecto es 500</span>
+</span><span id="__span-10-13"><a id="__codelineno-10-13" name="__codelineno-10-13" href="#__codelineno-10-13"></a>    <span class="n">combine_text_under_n_chars</span><span class="o">=</span><span class="mi">2000</span><span class="p">,</span>       <span class="c1"># Por defecto es 0</span>
+</span><span id="__span-10-14"><a id="__codelineno-10-14" name="__codelineno-10-14" href="#__codelineno-10-14"></a>    <span class="n">new_after_n_chars</span><span class="o">=</span><span class="mi">6000</span><span class="p">,</span>
+</span><span id="__span-10-15"><a id="__codelineno-10-15" name="__codelineno-10-15" href="#__codelineno-10-15"></a>
+</span><span id="__span-10-16"><a id="__codelineno-10-16" name="__codelineno-10-16" href="#__codelineno-10-16"></a>    <span class="c1"># extract_images_in_pdf=True,          # Obsoleto</span>
+</span><span id="__span-10-17"><a id="__codelineno-10-17" name="__codelineno-10-17" href="#__codelineno-10-17"></a><span class="p">)</span>
+</span></code></pre></div>
+Aquí, la función <code>partition_pdf</code> procesa el archivo PDF extrayendo no solo texto, sino también imágenes y tablas. La función divide el PDF en partes manejables, conocidas como "chunks", y permite ajustar la forma en que se extraen los diferentes tipos de contenido. En particular, se infiere la estructura de las tablas, se extraen bloques de imágenes, y se define cómo dividir el contenido en chunks basándose en títulos y límites de caracteres. Las imágenes extraídas se codifican en base64 para facilitar su transmisión o almacenamiento.</p>
+<div class="admonition tip">
+<p class="admonition-title">📖 Para aprender más</p>
+<p>El formato base64 es un método de codificación que convierte datos binarios en texto ASCII, permitiendo que los datos sean fácilmente transmitidos a través de medios que solo soportan texto. Puedes aprender más sobre el formato base64 en la <a href="https://es.wikipedia.org/wiki/Base64">documentación de Wikipedia</a>.</p>
+</div>
+<p>Verifiquemos el contenido extraído:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="n">chunks</span>
+</span></code></pre></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="5:1"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1">Salida</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="o">[</span>&lt;unstructured.documents.elements.CompositeElement<span class="w"> </span>at<span class="w"> </span>0x702efeb07670&gt;,
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="w"> </span>&lt;unstructured.documents.elements.CompositeElement<span class="w"> </span>at<span class="w"> </span>0x702e358f2be0&gt;,
+</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="w"> </span>&lt;unstructured.documents.elements.CompositeElement<span class="w"> </span>at<span class="w"> </span>0x702efeb07be0&gt;,
+</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="w"> </span>&lt;unstructured.documents.elements.CompositeElement<span class="w"> </span>at<span class="w"> </span>0x702efeb07f40&gt;,
+</span><span id="__span-12-5"><a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a><span class="w"> </span>...
+</span></code></pre></div>
+</div>
+</div>
+</div>
+<p>Con esta configuración, obtenemos dos tipos de elementos:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="nb">set</span><span class="p">([</span><span class="nb">str</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">el</span><span class="p">))</span> <span class="k">for</span> <span class="n">el</span> <span class="ow">in</span> <span class="n">chunks</span><span class="p">])</span>
+</span></code></pre></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="6:1"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio" /><div class="tabbed-labels"><label for="__tabbed_6_1">Salida</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="o">{</span><span class="s2">&quot;&lt;class &#39;unstructured.documents.elements.CompositeElement&#39;&gt;&quot;</span>,
+</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="w"> </span><span class="s2">&quot;&lt;class &#39;unstructured.documents.elements.Table&#39;&gt;&quot;</span><span class="o">}</span>
+</span></code></pre></div>
+</div>
+</div>
+</div>
+<p>Un <code>CompositeElement</code> generalmente contiene múltiples elementos secundarios de varios tipos, como texto, imágenes o tablas. Esto permite que la biblioteca gestione secciones de un documento compuestas por diferentes tipos de contenido como una sola entidad.</p>
+<p>En el procesamiento de documentos, es común encontrar secciones que incluyen una mezcla de texto, imágenes y otros elementos que lógicamente son parecidos. 
+Un <code>CompositeElement</code> puede representar dichas secciones. Cada objeto <code>CompositeElement</code> tiene un atributo <code>metadata</code>, que es una instancia de la clase <code>ElementMetadata</code>. Este atributo contiene información adicional sobre el chunk, como números de página, detalles del archivo o datos estructurales. Por ejemplo:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="n">chunks</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">metadata</span><span class="o">.</span><span class="n">orig_elements</span>
+</span></code></pre></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="7:1"><input checked="checked" id="__tabbed_7_1" name="__tabbed_7" type="radio" /><div class="tabbed-labels"><label for="__tabbed_7_1">Salida</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="o">[</span>&lt;unstructured.documents.elements.Title<span class="w"> </span>at<span class="w"> </span>0x702e35e7ed60&gt;,
+</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="w"> </span>&lt;unstructured.documents.elements.NarrativeText<span class="w"> </span>at<span class="w"> </span>0x702e35e7edf0&gt;,
+</span><span id="__span-16-3"><a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="w"> </span>&lt;unstructured.documents.elements.Footer<span class="w"> </span>at<span class="w"> </span>0x702e0cedd940&gt;,
+</span><span id="__span-16-4"><a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a><span class="w"> </span>&lt;unstructured.documents.elements.Image<span class="w"> </span>at<span class="w"> </span>0x702e0ceddd00&gt;,
+</span><span id="__span-16-5"><a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a><span class="w"> </span>&lt;unstructured.documents.elements.Image<span class="w"> </span>at<span class="w"> </span>0x702e0ceddac0&gt;,
+</span><span id="__span-16-6"><a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a><span class="w"> </span>&lt;unstructured.documents.elements.NarrativeText<span class="w"> </span>at<span class="w"> </span>0x702e0cedde50&gt;,
+</span><span id="__span-16-7"><a id="__codelineno-16-7" name="__codelineno-16-7" href="#__codelineno-16-7"></a><span class="w"> </span>&lt;unstructured.documents.elements.NarrativeText<span class="w"> </span>at<span class="w"> </span>0x702e0d38a730&gt;,
+</span><span id="__span-16-8"><a id="__codelineno-16-8" name="__codelineno-16-8" href="#__codelineno-16-8"></a><span class="w"> </span>&lt;unstructured.documents.elements.Title<span class="w"> </span>at<span class="w"> </span>0x702e0d38aca0&gt;,
+</span><span id="__span-16-9"><a id="__codelineno-16-9" name="__codelineno-16-9" href="#__codelineno-16-9"></a><span class="w"> </span>&lt;unstructured.documents.elements.NarrativeText<span class="w"> </span>at<span class="w"> </span>0x702e0d38adc0&gt;,
+</span><span id="__span-16-10"><a id="__codelineno-16-10" name="__codelineno-16-10" href="#__codelineno-16-10"></a><span class="w"> </span>&lt;unstructured.documents.elements.NarrativeText<span class="w"> </span>at<span class="w"> </span>0x702e0d16a7c0&gt;,
+</span><span id="__span-16-11"><a id="__codelineno-16-11" name="__codelineno-16-11" href="#__codelineno-16-11"></a><span class="w"> </span>&lt;unstructured.documents.elements.Formula<span class="w"> </span>at<span class="w"> </span>0x702e0d16a0a0&gt;,
+</span><span id="__span-16-12"><a id="__codelineno-16-12" name="__codelineno-16-12" href="#__codelineno-16-12"></a><span class="w"> </span>&lt;unstructured.documents.elements.NarrativeText<span class="w"> </span>at<span class="w"> </span>0x702e0d16a610&gt;,
+</span><span id="__span-16-13"><a id="__codelineno-16-13" name="__codelineno-16-13" href="#__codelineno-16-13"></a><span class="w"> </span>&lt;unstructured.documents.elements.NarrativeText<span class="w"> </span>at<span class="w"> </span>0x702e0d433d30&gt;<span class="o">]</span>
+</span></code></pre></div>
+</div>
+</div>
+</div>
+<p>Aquí, <code>orig_elements</code> es un campo específico dentro de la metadata que almacena una referencia a los elementos originales, no divididos, a partir de los cuales se creó el chunk. Generalmente, es una lista de objetos <code>Element</code> que fueron combinados o procesados para formar el chunk actual. En este chunk particular, tenemos los siguientes elementos:</p>
+<ul>
+<li>Título</li>
+<li>Texto narrativo</li>
+<li>Pie de página</li>
+<li>Imagen</li>
+<li>Fórmula</li>
+</ul>
+<p>Separemos las imágenes en el chunk:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="n">elements</span> <span class="o">=</span> <span class="n">chunks</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">metadata</span><span class="o">.</span><span class="n">orig_elements</span>
+</span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>
+</span><span id="__span-17-3"><a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a><span class="n">chunks_images</span> <span class="o">=</span> <span class="p">[</span><span class="n">el</span> <span class="k">for</span> <span class="n">el</span> <span class="ow">in</span> <span class="n">elements</span> <span class="k">if</span> <span class="s2">&quot;Image&quot;</span> <span class="ow">in</span> <span class="nb">str</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">el</span><span class="p">))]</span>
+</span><span id="__span-17-4"><a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a><span class="n">chunks_images</span>
+</span></code></pre></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="8:1"><input checked="checked" id="__tabbed_8_1" name="__tabbed_8" type="radio" /><div class="tabbed-labels"><label for="__tabbed_8_1">Salida</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block"></div>
+</div>
+</div>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="o">[</span>&lt;unstructured.documents.elements.Image<span class="w"> </span>at<span class="w"> </span>0x702e0ceddd00&gt;,
+</span><span id="__span-18-2"><a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a><span class="w"> </span>&lt;unstructured.documents.elements.Image<span class="w"> </span>at<span class="w"> </span>0x702e0ceddac0&gt;<span class="o">]</span>
+</span></code></pre></div>
+<p>La siguiente función extraerá todas las imágenes del documento en una lista:</p>
+<p><div class="language-python highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="c1"># Extraer las imágenes de los CompositeElements</span>
+</span><span id="__span-19-2"><a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a>
+</span><span id="__span-19-3"><a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a><span class="k">def</span><span class="w"> </span><span class="nf">get_images_base64</span><span class="p">(</span><span class="n">chunks</span><span class="p">):</span>
+</span><span id="__span-19-4"><a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a>    <span class="n">images_b64</span> <span class="o">=</span> <span class="p">[]</span>
+</span><span id="__span-19-5"><a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a>    <span class="k">for</span> <span class="n">chunk</span> <span class="ow">in</span> <span class="n">chunks</span><span class="p">:</span>
+</span><span id="__span-19-6"><a id="__codelineno-19-6" name="__codelineno-19-6" href="#__codelineno-19-6"></a>        <span class="k">if</span> <span class="s2">&quot;CompositeElement&quot;</span> <span class="ow">in</span> <span class="nb">str</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">chunk</span><span class="p">)):</span>  <span class="c1"># Filtramos los CompositeElements</span>
+</span><span id="__span-19-7"><a id="__codelineno-19-7" name="__codelineno-19-7" href="#__codelineno-19-7"></a>            <span class="n">chunks_els</span> <span class="o">=</span> <span class="n">chunk</span><span class="o">.</span><span class="n">metadata</span><span class="o">.</span><span class="n">orig_elements</span>
+</span><span id="__span-19-8"><a id="__codelineno-19-8" name="__codelineno-19-8" href="#__codelineno-19-8"></a>            <span class="k">for</span> <span class="n">el</span> <span class="ow">in</span> <span class="n">chunks_els</span><span class="p">:</span>
+</span><span id="__span-19-9"><a id="__codelineno-19-9" name="__codelineno-19-9" href="#__codelineno-19-9"></a>                <span class="k">if</span> <span class="s2">&quot;Image&quot;</span> <span class="ow">in</span> <span class="nb">str</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">el</span><span class="p">)):</span>
+</span><span id="__span-19-10"><a id="__codelineno-19-10" name="__codelineno-19-10" href="#__codelineno-19-10"></a>                    <span class="n">images_b64</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">el</span><span class="o">.</span><span class="n">metadata</span><span class="o">.</span><span class="n">image_base64</span><span class="p">)</span>
+</span><span id="__span-19-11"><a id="__codelineno-19-11" name="__codelineno-19-11" href="#__codelineno-19-11"></a>    <span class="k">return</span> <span class="n">images_b64</span>
+</span></code></pre></div>
+Y podemos verificar la extracción visualizándola:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">base64</span>
+</span><span id="__span-20-2"><a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">IPython.display</span><span class="w"> </span><span class="kn">import</span> <span class="n">Image</span><span class="p">,</span> <span class="n">display</span>
+</span><span id="__span-20-3"><a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a>
+</span><span id="__span-20-4"><a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a><span class="k">def</span><span class="w"> </span><span class="nf">display_base64_image</span><span class="p">(</span><span class="n">base64_code</span><span class="p">):</span>
+</span><span id="__span-20-5"><a id="__codelineno-20-5" name="__codelineno-20-5" href="#__codelineno-20-5"></a>    <span class="n">image_data</span> <span class="o">=</span> <span class="n">base64</span><span class="o">.</span><span class="n">b64decode</span><span class="p">(</span><span class="n">base64_code</span><span class="p">)</span>
+</span><span id="__span-20-6"><a id="__codelineno-20-6" name="__codelineno-20-6" href="#__codelineno-20-6"></a>    <span class="n">display</span><span class="p">(</span><span class="n">Image</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">image_data</span><span class="p">))</span>
+</span><span id="__span-20-7"><a id="__codelineno-20-7" name="__codelineno-20-7" href="#__codelineno-20-7"></a>
+</span><span id="__span-20-8"><a id="__codelineno-20-8" name="__codelineno-20-8" href="#__codelineno-20-8"></a><span class="n">display_base64_image</span><span class="p">(</span><span class="n">images</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+</span></code></pre></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="9:1"><input checked="checked" id="__tabbed_9_1" name="__tabbed_9" type="radio" /><div class="tabbed-labels"><label for="__tabbed_9_1">Salida</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><img alt="alt text" src="../../assets/images/base64.png" /></p>
+</div>
+</div>
+</div>
+<h3 id="web-based">Web Based</h3>
+<p>Veamos ahora un ejemplo corto de carga de un documento web:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">langchain.document_loaders</span><span class="w"> </span><span class="kn">import</span> <span class="n">WebBaseLoader</span>
+</span><span id="__span-21-2"><a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a>
+</span><span id="__span-21-3"><a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a><span class="n">loader</span> <span class="o">=</span> <span class="n">WebBaseLoader</span><span class="p">(</span><span class="s2">&quot;https://concepto.de/reino-fungi/&quot;</span><span class="p">)</span>
+</span><span id="__span-21-4"><a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a><span class="n">docs</span> <span class="o">=</span> <span class="n">loader</span><span class="o">.</span><span class="n">load</span><span class="p">()</span>
+</span><span id="__span-21-5"><a id="__codelineno-21-5" name="__codelineno-21-5" href="#__codelineno-21-5"></a><span class="nb">print</span><span class="p">(</span><span class="n">docs</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">page_content</span><span class="p">[:</span><span class="mi">500</span><span class="p">])</span>
+</span></code></pre></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="10:1"><input checked="checked" id="__tabbed_10_1" name="__tabbed_10" type="radio" /><div class="tabbed-labels"><label for="__tabbed_10_1">Salida</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block"></div>
+</div>
+</div>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-22-1"><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a>Reino<span class="w"> </span>Fungi<span class="w"> </span>-<span class="w"> </span>Concepto,<span class="w"> </span>tipos,<span class="w"> </span>características<span class="w"> </span>y<span class="w"> </span>ejemplos
+</span><span id="__span-22-2"><a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a>
+</span><span id="__span-22-3"><a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a>...
+</span><span id="__span-22-4"><a id="__codelineno-22-4" name="__codelineno-22-4" href="#__codelineno-22-4"></a>
+</span><span id="__span-22-5"><a id="__codelineno-22-5" name="__codelineno-22-5" href="#__codelineno-22-5"></a>Arte
+</span><span id="__span-22-6"><a id="__codelineno-22-6" name="__codelineno-22-6" href="#__codelineno-22-6"></a>Conocimiento
+</span><span id="__span-22-7"><a id="__codelineno-22-7" name="__codelineno-22-7" href="#__codelineno-22-7"></a>C
+</span></code></pre></div>
+<p>Este tipo de cargadores dejan como espacios en blanco los objetos que no son texto, como imágenes o tablas. Por lo tanto, requeriremos conectar otras herramientas que nos permitan hacer un pos-procesamiento adecuado.
+Una característica de <code>WebBaseLoader</code> es que permite cargar varias URLs a la vez. Vamos a cargar contenido de dos páginas relacionadas:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="c1"># Lista de URLs a cargar</span>
+</span><span id="__span-23-2"><a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a><span class="n">urls</span> <span class="o">=</span> <span class="p">[</span>
+</span><span id="__span-23-3"><a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a>    <span class="s2">&quot;https://es.wikipedia.org/wiki/Inteligencia_artificial&quot;</span><span class="p">,</span>
+</span><span id="__span-23-4"><a id="__codelineno-23-4" name="__codelineno-23-4" href="#__codelineno-23-4"></a>    <span class="s2">&quot;https://es.wikipedia.org/wiki/Aprendizaje_autom%C3%A1tico&quot;</span>
+</span><span id="__span-23-5"><a id="__codelineno-23-5" name="__codelineno-23-5" href="#__codelineno-23-5"></a><span class="p">]</span>
+</span><span id="__span-23-6"><a id="__codelineno-23-6" name="__codelineno-23-6" href="#__codelineno-23-6"></a>
+</span><span id="__span-23-7"><a id="__codelineno-23-7" name="__codelineno-23-7" href="#__codelineno-23-7"></a><span class="c1"># Cargamos múltiples páginas</span>
+</span><span id="__span-23-8"><a id="__codelineno-23-8" name="__codelineno-23-8" href="#__codelineno-23-8"></a><span class="n">multi_loader</span> <span class="o">=</span> <span class="n">WebBaseLoader</span><span class="p">(</span><span class="n">urls</span><span class="p">)</span>
+</span><span id="__span-23-9"><a id="__codelineno-23-9" name="__codelineno-23-9" href="#__codelineno-23-9"></a><span class="n">multi_documents</span> <span class="o">=</span> <span class="n">multi_loader</span><span class="o">.</span><span class="n">load</span><span class="p">()</span>
+</span><span id="__span-23-10"><a id="__codelineno-23-10" name="__codelineno-23-10" href="#__codelineno-23-10"></a>
+</span><span id="__span-23-11"><a id="__codelineno-23-11" name="__codelineno-23-11" href="#__codelineno-23-11"></a><span class="c1"># Mostramos el número de documentos cargados y un extracto de cada uno</span>
+</span><span id="__span-23-12"><a id="__codelineno-23-12" name="__codelineno-23-12" href="#__codelineno-23-12"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Se cargaron </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">multi_documents</span><span class="p">)</span><span class="si">}</span><span class="s2"> documentos.&quot;</span><span class="p">)</span>
+</span><span id="__span-23-13"><a id="__codelineno-23-13" name="__codelineno-23-13" href="#__codelineno-23-13"></a><span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">doc</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">multi_documents</span><span class="p">):</span>
+</span><span id="__span-23-14"><a id="__codelineno-23-14" name="__codelineno-23-14" href="#__codelineno-23-14"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Documento </span><span class="si">{</span><span class="n">i</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="si">}</span><span class="s2"> (primeros 200 caracteres):&quot;</span><span class="p">)</span>
+</span><span id="__span-23-15"><a id="__codelineno-23-15" name="__codelineno-23-15" href="#__codelineno-23-15"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">doc</span><span class="o">.</span><span class="n">page_content</span><span class="p">[:</span><span class="mi">200</span><span class="p">])</span>
+</span></code></pre></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="11:1"><input checked="checked" id="__tabbed_11_1" name="__tabbed_11" type="radio" /><div class="tabbed-labels"><label for="__tabbed_11_1">Salida</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block"></div>
+</div>
+</div>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-24-1"><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a>Se<span class="w"> </span>cargaron<span class="w"> </span><span class="m">2</span><span class="w"> </span>documentos.
+</span><span id="__span-24-2"><a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a>Documento<span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="o">(</span>primeros<span class="w"> </span><span class="m">200</span><span class="w"> </span>caracteres<span class="o">)</span>:
+</span><span id="__span-24-3"><a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a>
+</span><span id="__span-24-4"><a id="__codelineno-24-4" name="__codelineno-24-4" href="#__codelineno-24-4"></a>Inteligencia<span class="w"> </span>artificial<span class="w"> </span>-<span class="w"> </span>Wikipedia,<span class="w"> </span>la<span class="w"> </span>enciclopedia<span class="w"> </span>libre
+</span><span id="__span-24-5"><a id="__codelineno-24-5" name="__codelineno-24-5" href="#__codelineno-24-5"></a>
+</span><span id="__span-24-6"><a id="__codelineno-24-6" name="__codelineno-24-6" href="#__codelineno-24-6"></a>...
+</span><span id="__span-24-7"><a id="__codelineno-24-7" name="__codelineno-24-7" href="#__codelineno-24-7"></a>
+</span><span id="__span-24-8"><a id="__codelineno-24-8" name="__codelineno-24-8" href="#__codelineno-24-8"></a>El<span class="w"> </span>algoritmo<span class="w"> </span>aprende<span class="w"> </span>observando<span class="w"> </span>el<span class="w"> </span>mundo<span class="w"> </span>que<span class="w"> </span>le<span class="w"> </span>rodea.<span class="w"> </span>Su<span class="w"> </span>información<span class="w"> </span>de<span class="w"> </span>entrada<span class="w"> </span>es<span class="w"> </span>la<span class="w"> </span>retroalimentación<span class="w"> </span>que<span class="w"> </span>obtiene<span class="w"> </span>del<span class="w"> </span>mundo<span class="w"> </span>exterior<span class="w"> </span>como<span class="w"> </span>respuesta<span class="w"> </span>a<span class="w"> </span>sus<span class="w"> </span>acciones.<span class="w"> </span>Por<span class="w"> </span>lo<span class="w"> </span>tanto,<span class="w"> </span>el<span class="w"> </span>sistema<span class="w"> </span>aprende<span class="w"> </span>a<span class="w"> </span>base<span class="w"> </span>de<span class="w"> </span>ensayo-error.
+</span><span id="__span-24-9"><a id="__codelineno-24-9" name="__codelineno-24-9" href="#__codelineno-24-9"></a>
+</span><span id="__span-24-10"><a id="__codelineno-24-10" name="__codelineno-24-10" href="#__codelineno-24-10"></a>El<span class="w"> </span>aprendizaje<span class="w"> </span>por<span class="w"> </span>refuerzo<span class="w"> </span>es<span class="w"> </span>el<span class="w"> </span>más<span class="w"> </span>general<span class="w"> </span>entre<span class="w"> </span>las<span class="w"> </span>tres<span class="w"> </span>categorías.<span class="w"> </span>En<span class="w"> </span>vez<span class="w"> </span>de<span class="w"> </span>que<span class="w"> </span>un<span class="w"> </span>instructor<span class="w"> </span>indique<span class="w"> </span>al<span class="w"> </span>agente<span class="w"> </span>qué<span class="w"> </span>hacer,<span class="w"> </span>el<span class="w"> </span>agente<span class="w"> </span>inteligente<span class="w"> </span>debe<span class="w"> </span>aprender<span class="w"> </span>cómo<span class="w"> </span>se<span class="w"> </span>comporta<span class="w"> </span>el<span class="w"> </span>entorno<span class="w"> </span>mediante<span class="w"> </span>recompensas<span class="w"> </span><span class="o">(</span>refuerzos<span class="o">)</span><span class="w"> </span>o<span class="w"> </span>castigos,<span class="w"> </span>derivados<span class="w"> </span>del<span class="w"> </span>éxito<span class="w"> </span>o<span class="w"> </span>del<span class="w"> </span>fracaso<span class="w"> </span>respectivamente.<span class="w"> </span>El<span class="w"> </span>objetivo<span class="w"> </span>principal<span class="w"> </span>es<span class="w"> </span>aprender<span class="w"> </span>la<span class="w"> </span>función<span class="w"> </span>de<span class="w"> </span>valor<span class="w"> </span>que<span class="w"> </span>le<span class="w"> </span>ayude<span class="w"> </span>al<span class="w"> </span>agente<span class="w"> </span>inteligente<span class="w"> </span>a<span class="w"> </span>maximizar<span class="w"> </span>la<span class="w"> </span>señal<span class="w"> </span>de<span class="w"> </span>recompensa<span class="w"> </span>y<span class="w"> </span>así<span class="w"> </span>optimizar<span class="w"> </span>sus<span class="w"> </span>políticas<span class="w"> </span>de<span class="w"> </span>modo<span class="w"> </span>a<span class="w"> </span>comprender<span class="w"> </span>el<span class="w"> </span>comportamiento<span class="w"> </span>del<span class="w"> </span>entorno<span class="w"> </span>y<span class="w"> </span>a<span class="w"> </span>tomar<span class="w"> </span>buenas<span class="w"> </span>decisiones<span class="w"> </span>para<span class="w"> </span>el<span class="w"> </span>logro<span class="w"> </span>de<span class="w"> </span>sus<span class="w"> </span>objetivos<span class="w"> </span>formales.
+</span><span id="__span-24-11"><a id="__codelineno-24-11" name="__codelineno-24-11" href="#__codelineno-24-11"></a>
+</span><span id="__span-24-12"><a id="__codelineno-24-12" name="__codelineno-24-12" href="#__codelineno-24-12"></a>Los<span class="w"> </span>principales<span class="w"> </span>algoritmos<span class="w"> </span>de<span class="w"> </span>aprendizaje<span class="w"> </span>por<span class="w"> </span>refuerzo<span class="w"> </span>se<span class="w"> </span>desarrollan<span class="w"> </span>dentro<span class="w"> </span>de<span class="w"> </span>los<span class="w"> </span>métodos<span class="w"> </span>de<span class="w"> </span>resolución<span class="w"> </span>de<span class="w"> </span>problemas<span class="w"> </span>de<span class="w"> </span>decisión<span class="w"> </span>finitos<span class="w"> </span>de<span class="w"> </span>Markov,<span class="w"> </span>que<span class="w"> </span>incorporan<span class="w"> </span>las<span class="w"> </span>ecuaciones<span class="w"> </span>de<span class="w"> </span>Bellman<span class="w"> </span>y<span class="w"> </span>las<span class="w"> </span>funciones<span class="w"> </span>de<span class="w"> </span>valor.<span class="w"> </span>Los<span class="w"> </span>tres<span class="w"> </span>métodos<span class="w"> </span>principales<span class="w"> </span>son:<span class="w"> </span>la<span class="w"> </span>programación<span class="w"> </span>dinámica,<span class="w"> </span>los<span class="w"> </span>métodos<span class="w"> </span>de<span class="w"> </span>Monte<span class="w"> </span>Carlo<span class="w"> </span>y<span class="w"> </span>el<span class="w"> </span>aprendizaje<span class="w"> </span>de<span class="w"> </span>diferencias<span class="w"> </span>temporales.
+</span><span id="__span-24-13"><a id="__codelineno-24-13" name="__codelineno-24-13" href="#__codelineno-24-13"></a>
+</span><span id="__span-24-14"><a id="__codelineno-24-14" name="__codelineno-24-14" href="#__codelineno-24-14"></a>Entre<span class="w"> </span>las<span class="w"> </span>implementaciones<span class="w"> </span>desarrolladas<span class="w"> </span>está<span class="w"> </span>AlphaGo,<span class="w"> </span>un<span class="w"> </span>programa<span class="w"> </span>de<span class="w"> </span>IA<span class="w"> </span>desarrollado<span class="w"> </span>por<span class="w"> </span>Google<span class="w"> </span>DeepMind<span class="w"> </span>para<span class="w"> </span>jugar<span class="w"> </span>el<span class="w"> </span>juego<span class="w"> </span>de<span class="w"> </span>mesa<span class="w"> </span>Go.<span class="w"> </span>En<span class="w"> </span>marzo<span class="w"> </span>de<span class="w"> </span><span class="m">2016</span><span class="w"> </span>AlphaGo<span class="w"> </span>le<span class="w"> </span>ganó<span class="w"> </span>una<span class="w"> </span>partida<span class="w"> </span>al<span class="w"> </span>jugador<span class="w"> </span>profesional<span class="w"> </span>Lee<span class="w"> </span>Se-Dol<span class="w"> </span>que<span class="w"> </span>tiene<span class="w"> </span>la<span class="w"> </span>categoría<span class="w"> </span>noveno<span class="w"> </span>dan<span class="w"> </span>y<span class="w"> </span><span class="m">18</span><span class="w"> </span>títulos<span class="w"> </span>mundiales.<span class="w"> </span>Entre<span class="w"> </span>los<span class="w"> </span>algoritmos<span class="w"> </span>que<span class="w"> </span>utiliza<span class="w"> </span>se<span class="w"> </span>encuentra<span class="w"> </span>el<span class="w"> </span>árbol<span class="w"> </span>de<span class="w"> </span>búsqueda<span class="w"> </span>Monte<span class="w"> </span>Carlo,<span class="w"> </span>también<span class="w"> </span>utiliza<span class="w"> </span>aprendizaje<span class="w"> </span>profundo<span class="w"> </span>con<span class="w"> </span>redes<span class="w"> </span>neuronales.<span class="w"> </span>Puede<span class="w"> </span>ver<span class="w"> </span>lo<span class="w"> </span>ocurrido<span class="w"> </span>en<span class="w"> </span>el<span class="w"> </span>documental<span class="w"> </span>de<span class="w"> </span>Netflix<span class="w"> </span>“Alp
+</span></code></pre></div>
+<h4 id="youtube">YouTube</h4>
+<p>La API <code>YouTubeTranscriptApi</code> es una herramienta útil para extraer transcripciones de videos de YouTube. Esta API permite obtener los subtítulos de un video en diferentes idiomas, facilitando el análisis de contenido de video de manera programática. A continuación, ilustraremos su uso utilizando el video de YouTube sobre  <a href="https://www.youtube.com/watch?v=kbGu60QBx2o">retropropagación </a>.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-25-1"><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">youtube_transcript_api</span><span class="w"> </span><span class="kn">import</span> <span class="n">YouTubeTranscriptApi</span>
+</span><span id="__span-25-2"><a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a>
+</span><span id="__span-25-3"><a id="__codelineno-25-3" name="__codelineno-25-3" href="#__codelineno-25-3"></a><span class="c1"># Extraemos el ID del video desde la URL</span>
+</span><span id="__span-25-4"><a id="__codelineno-25-4" name="__codelineno-25-4" href="#__codelineno-25-4"></a><span class="n">video_id</span> <span class="o">=</span> <span class="s2">&quot;kbGu60QBx2o&quot;</span>  <span class="c1"># ID de https://www.youtube.com/watch?v=kbGu60QBx2o (Backpropagation: Data Science Concepts)</span>
+</span><span id="__span-25-5"><a id="__codelineno-25-5" name="__codelineno-25-5" href="#__codelineno-25-5"></a>
+</span><span id="__span-25-6"><a id="__codelineno-25-6" name="__codelineno-25-6" href="#__codelineno-25-6"></a><span class="k">try</span><span class="p">:</span>
+</span><span id="__span-25-7"><a id="__codelineno-25-7" name="__codelineno-25-7" href="#__codelineno-25-7"></a>    <span class="n">transcript</span> <span class="o">=</span> <span class="n">YouTubeTranscriptApi</span><span class="o">.</span><span class="n">get_transcript</span><span class="p">(</span><span class="n">video_id</span><span class="p">,</span> <span class="n">languages</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;es&#39;</span><span class="p">,</span> <span class="s1">&#39;en&#39;</span><span class="p">])</span>
+</span><span id="__span-25-8"><a id="__codelineno-25-8" name="__codelineno-25-8" href="#__codelineno-25-8"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Primeros 500 caracteres del transcrito manual:&quot;</span><span class="p">)</span>
+</span><span id="__span-25-9"><a id="__codelineno-25-9" name="__codelineno-25-9" href="#__codelineno-25-9"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="n">entry</span><span class="p">[</span><span class="s1">&#39;text&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">entry</span> <span class="ow">in</span> <span class="n">transcript</span><span class="p">])[:</span><span class="mi">500</span><span class="p">])</span>
+</span><span id="__span-25-10"><a id="__codelineno-25-10" name="__codelineno-25-10" href="#__codelineno-25-10"></a><span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+</span><span id="__span-25-11"><a id="__codelineno-25-11" name="__codelineno-25-11" href="#__codelineno-25-11"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Error al obtener el transcrito manualmente: </span><span class="si">{</span><span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="12:1"><input checked="checked" id="__tabbed_12_1" name="__tabbed_12" type="radio" /><div class="tabbed-labels"><label for="__tabbed_12_1">Salida</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block"></div>
+</div>
+</div>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-26-1"><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a><span class="o">[</span>Music<span class="o">]</span><span class="w"> </span>hey<span class="w"> </span>everyone<span class="w"> </span><span class="k">in</span><span class="w"> </span>this<span class="w"> </span>video<span class="w"> </span>we<span class="s1">&#39;re going to do a followup to our initial video on neural networks and this video is going to be on back propagation now I&#39;</span>m<span class="w"> </span>making<span class="w"> </span>this<span class="w"> </span>video<span class="w"> </span>on<span class="w"> </span>back<span class="w"> </span>propagation<span class="w"> </span>mostly<span class="w"> </span>because<span class="w"> </span>it<span class="err">&#39;</span>s<span class="w"> </span>a<span class="w"> </span>really<span class="w"> </span>difficult<span class="w"> </span>concept<span class="w"> </span>to<span class="w"> </span>understand<span class="w"> </span>at<span class="w"> </span>least<span class="w"> </span>it<span class="w"> </span>was<span class="w"> </span><span class="k">for</span><span class="w"> </span>me<span class="w"> </span>I<span class="w"> </span><span class="nb">read</span><span class="w"> </span>through<span class="w"> </span>multiple<span class="w"> </span>blog<span class="w"> </span>posts<span class="w"> </span>and<span class="w"> </span>watch<span class="w"> </span>videos<span class="w"> </span>and<span class="w"> </span>everyone<span class="w"> </span>seems<span class="w"> </span>to<span class="w"> </span>have<span class="w"> </span>their<span class="w"> </span>own<span class="w"> </span>kind<span class="w"> </span>of<span class="w"> </span>way<span class="w"> </span>of<span class="w"> </span>understanding<span class="w"> </span>and<span class="w"> </span>explaining<span class="w"> </span>it<span class="w"> </span>and<span class="w"> </span>it<span class="w"> </span>was<span class="w"> </span>difficult<span class="w"> </span><span class="k">for</span><span class="w"> </span>me<span class="w"> </span>to<span class="w"> </span>match<span class="w"> </span>up<span class="w"> </span>all<span class="w"> </span>those<span class="w"> </span>understandings<span class="w"> </span>into<span class="w"> </span>what<span class="w"> </span>this<span class="w"> </span>
+</span></code></pre></div>
+<h2 id="text-splitters">Text Splitters</h2>
+<p>Una vez hemos cargado el o los documentos sobre los cuales queremos realizar RAG , debemos separarlos en fragmentos sobre los cuales crearemos nuestra base de datos de embeddings, es decir, una base de datos vectorial (ver <a href="#fig-retrieval-subsystems">Figura 2</a>). La herramienta que nos permite hacer esto son los llamados <strong>Text Splitters</strong>.
+LangChain ofrece varias implementaciones de <strong>Text Splitters</strong> para dividir texto basándose en:</p>
+<ul>
+<li><strong>Caracteres</strong>  </li>
+<li><strong>Tokens</strong>  </li>
+<li><strong>Líneas</strong>  </li>
+<li><strong>Oraciones</strong>  </li>
+</ul>
+<p>Por ejemplo, el <strong>CharacterTextSplitter</strong> divide el texto en función de caracteres, mientras que el <strong>RecursiveCharacterTextSplitter</strong> intenta dividir por varios delimitadores (como <code>\n</code> o espacios) hasta encontrar el tamaño adecuado.</p>
+<p>En general, el texto completo será dividido según un parámetro que limita el tamaño del fragmento (<code>chunk_size</code>) y otro parámetro que le indica al text splitter el nivel de superposición de textos en dos fragmentos contiguos (<code>chunk_overlap</code>). El solapamiento es deseable para garantizar que las ideas que no estén completas en un fragmento queden completas en el siguiente, como lo ilustra la figura:</p>
+<p><img alt="alt text" src="../../assets/images/chunck_overlap.png" /></p>
+<p>Para usar el <code>RecursiveCharacterTextSplitter</code> y el <code>CharacterTextSplitter</code>, cargaremos el módulo:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-27-1"><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">langchain.text_splitter</span><span class="w"> </span><span class="kn">import</span> <span class="n">RecursiveCharacterTextSplitter</span><span class="p">,</span> <span class="n">CharacterTextSplitter</span>
+</span></code></pre></div>
+<h3 id="recursivecharactertextsplitter">RecursiveCharacterTextSplitter</h3>
+<p>Dividamos un texto usando un tamaño de fragmento de 26 caracteres y un solapamiento de 4 caracteres.</p>
+<p><div class="language-python highlight"><pre><span></span><code><span id="__span-28-1"><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a><span class="n">chunk_size</span> <span class="o">=</span> <span class="mi">26</span>
+</span><span id="__span-28-2"><a id="__codelineno-28-2" name="__codelineno-28-2" href="#__codelineno-28-2"></a><span class="n">chunk_overlap</span> <span class="o">=</span> <span class="mi">4</span>
+</span><span id="__span-28-3"><a id="__codelineno-28-3" name="__codelineno-28-3" href="#__codelineno-28-3"></a>
+</span><span id="__span-28-4"><a id="__codelineno-28-4" name="__codelineno-28-4" href="#__codelineno-28-4"></a><span class="c1"># Instanciamos los dos splitters</span>
+</span><span id="__span-28-5"><a id="__codelineno-28-5" name="__codelineno-28-5" href="#__codelineno-28-5"></a><span class="n">r_splitter</span> <span class="o">=</span> <span class="n">RecursiveCharacterTextSplitter</span><span class="p">(</span>
+</span><span id="__span-28-6"><a id="__codelineno-28-6" name="__codelineno-28-6" href="#__codelineno-28-6"></a>    <span class="n">chunk_size</span><span class="o">=</span><span class="n">chunk_size</span><span class="p">,</span>
+</span><span id="__span-28-7"><a id="__codelineno-28-7" name="__codelineno-28-7" href="#__codelineno-28-7"></a>    <span class="n">chunk_overlap</span><span class="o">=</span><span class="n">chunk_overlap</span>
+</span><span id="__span-28-8"><a id="__codelineno-28-8" name="__codelineno-28-8" href="#__codelineno-28-8"></a><span class="p">)</span>
+</span><span id="__span-28-9"><a id="__codelineno-28-9" name="__codelineno-28-9" href="#__codelineno-28-9"></a>
+</span><span id="__span-28-10"><a id="__codelineno-28-10" name="__codelineno-28-10" href="#__codelineno-28-10"></a><span class="n">c_splitter</span> <span class="o">=</span> <span class="n">CharacterTextSplitter</span><span class="p">(</span>
+</span><span id="__span-28-11"><a id="__codelineno-28-11" name="__codelineno-28-11" href="#__codelineno-28-11"></a>    <span class="n">chunk_size</span><span class="o">=</span><span class="n">chunk_size</span><span class="p">,</span>
+</span><span id="__span-28-12"><a id="__codelineno-28-12" name="__codelineno-28-12" href="#__codelineno-28-12"></a>    <span class="n">chunk_overlap</span><span class="o">=</span><span class="n">chunk_overlap</span>
+</span><span id="__span-28-13"><a id="__codelineno-28-13" name="__codelineno-28-13" href="#__codelineno-28-13"></a><span class="p">)</span>
+</span></code></pre></div>
+Usemos el divisor en la cadena de texto:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-29-1"><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a><span class="n">text1</span> <span class="o">=</span> <span class="s1">&#39;abcdefghijklmnopqrstuvwxyz&#39;</span>
+</span><span id="__span-29-2"><a id="__codelineno-29-2" name="__codelineno-29-2" href="#__codelineno-29-2"></a><span class="n">r_splitter</span><span class="o">.</span><span class="n">split_text</span><span class="p">(</span><span class="n">text1</span><span class="p">)</span>
+</span></code></pre></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="13:1"><input checked="checked" id="__tabbed_13_1" name="__tabbed_13" type="radio" /><div class="tabbed-labels"><label for="__tabbed_13_1">Salida</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-30-1"><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a><span class="o">[</span><span class="s1">&#39;abcdefghijklmnopqrstuvwxyz&#39;</span><span class="o">]</span>
+</span></code></pre></div>
+</div>
+</div>
+</div>
+<p>Como el texto es demasiado corto, el splitter solo genera un fragmento. Un texto un poco más largo, como en:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-31-1"><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a><span class="n">text2</span> <span class="o">=</span> <span class="s1">&#39;abcdefghijklmnopqrstuvwxyznopqrstuvwxyz&#39;</span>
+</span><span id="__span-31-2"><a id="__codelineno-31-2" name="__codelineno-31-2" href="#__codelineno-31-2"></a><span class="n">r_splitter</span><span class="o">.</span><span class="n">split_text</span><span class="p">(</span><span class="n">text2</span><span class="p">)</span>
+</span></code></pre></div>
+<p>Dividirá el texto en dos fragmentos.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="14:1"><input checked="checked" id="__tabbed_14_1" name="__tabbed_14" type="radio" /><div class="tabbed-labels"><label for="__tabbed_14_1">Salida</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-32-1"><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a><span class="o">[</span><span class="s1">&#39;abcdefghijklmnopqrstuvwxyz&#39;</span>,<span class="w"> </span><span class="s1">&#39;wxyznopqrstuvwxyz&#39;</span><span class="o">]</span>
+</span></code></pre></div>
+</div>
+</div>
+</div>
+<p>Ahora hagámoslo con el splitter de caracteres:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-33-1"><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a><span class="n">c_splitter</span><span class="o">.</span><span class="n">split_text</span><span class="p">(</span><span class="n">text3</span><span class="p">)</span>
+</span></code></pre></div>
+<p>Lo que vemos es que no trata de dividirlo. ¿Qué está pasando? Debemos escoger el carácter separador. Por ejemplo, <code>separator = ' '</code>.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-34-1"><a id="__codelineno-34-1" name="__codelineno-34-1" href="#__codelineno-34-1"></a><span class="n">c_splitter</span> <span class="o">=</span> <span class="n">CharacterTextSplitter</span><span class="p">(</span>
+</span><span id="__span-34-2"><a id="__codelineno-34-2" name="__codelineno-34-2" href="#__codelineno-34-2"></a>    <span class="n">chunk_size</span><span class="o">=</span><span class="n">chunk_size</span><span class="p">,</span>
+</span><span id="__span-34-3"><a id="__codelineno-34-3" name="__codelineno-34-3" href="#__codelineno-34-3"></a>    <span class="n">chunk_overlap</span><span class="o">=</span><span class="n">chunk_overlap</span><span class="p">,</span>
+</span><span id="__span-34-4"><a id="__codelineno-34-4" name="__codelineno-34-4" href="#__codelineno-34-4"></a>    <span class="n">separator</span><span class="o">=</span><span class="s1">&#39; &#39;</span>
+</span><span id="__span-34-5"><a id="__codelineno-34-5" name="__codelineno-34-5" href="#__codelineno-34-5"></a><span class="p">)</span>
+</span><span id="__span-34-6"><a id="__codelineno-34-6" name="__codelineno-34-6" href="#__codelineno-34-6"></a><span class="n">c_splitter</span><span class="o">.</span><span class="n">split_text</span><span class="p">(</span><span class="n">text3</span><span class="p">)</span>
+</span></code></pre></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="15:1"><input checked="checked" id="__tabbed_15_1" name="__tabbed_15" type="radio" /><div class="tabbed-labels"><label for="__tabbed_15_1">Salida</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-35-1"><a id="__codelineno-35-1" name="__codelineno-35-1" href="#__codelineno-35-1"></a><span class="o">[</span><span class="s1">&#39;a b c d e f g h i j k l m&#39;</span>,<span class="w"> </span><span class="s1">&#39;l m n o p q r s t u v w x&#39;</span>,<span class="w"> </span><span class="s1">&#39;w x y z&#39;</span><span class="o">]</span>
+</span></code></pre></div>
+</div>
+</div>
+</div>
+<p>Vemos otro ejemplo:
+<div class="language-python highlight"><pre><span></span><code><span id="__span-36-1"><a id="__codelineno-36-1" name="__codelineno-36-1" href="#__codelineno-36-1"></a><span class="c1"># Reemplaza la variable some_text por otro texto del mismo tamaño sobre lo que opinaba Einstein sobre termodinámica</span>
+</span><span id="__span-36-2"><a id="__codelineno-36-2" name="__codelineno-36-2" href="#__codelineno-36-2"></a><span class="n">some_text</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;Albert Einstein consideraba que la termodinámica era </span>
+</span><span id="__span-36-3"><a id="__codelineno-36-3" name="__codelineno-36-3" href="#__codelineno-36-3"></a><span class="s2">una de las teorías más fundamentales y sólidas de la física. En sus</span>
+</span><span id="__span-36-4"><a id="__codelineno-36-4" name="__codelineno-36-4" href="#__codelineno-36-4"></a><span class="s2"> propias palabras, decía que la termodinámica era la única teoría </span>
+</span><span id="__span-36-5"><a id="__codelineno-36-5" name="__codelineno-36-5" href="#__codelineno-36-5"></a><span class="s2"> física que él estaba convencido de que nunca sería refutada, dentro </span>
+</span><span id="__span-36-6"><a id="__codelineno-36-6" name="__codelineno-36-6" href="#__codelineno-36-6"></a><span class="s2"> del marco de aplicabilidad de sus conceptos básicos. Esto resaltaba </span>
+</span><span id="__span-36-7"><a id="__codelineno-36-7" name="__codelineno-36-7" href="#__codelineno-36-7"></a><span class="s2"> su profundo respeto por la capacidad de la termodinámica para describir </span>
+</span><span id="__span-36-8"><a id="__codelineno-36-8" name="__codelineno-36-8" href="#__codelineno-36-8"></a><span class="s2"> fenómenos naturales con precisión. Einstein veía en la termodinámica una</span>
+</span><span id="__span-36-9"><a id="__codelineno-36-9" name="__codelineno-36-9" href="#__codelineno-36-9"></a><span class="s2">  belleza que se derivaba de su simplicidad y universalidad, y la consideraba</span>
+</span><span id="__span-36-10"><a id="__codelineno-36-10" name="__codelineno-36-10" href="#__codelineno-36-10"></a><span class="s2">   una piedra angular en el entendimiento científico del mundo físico.&quot;&quot;&quot;</span>
+</span><span id="__span-36-11"><a id="__codelineno-36-11" name="__codelineno-36-11" href="#__codelineno-36-11"></a>
+</span><span id="__span-36-12"><a id="__codelineno-36-12" name="__codelineno-36-12" href="#__codelineno-36-12"></a><span class="nb">len</span><span class="p">(</span><span class="n">some_text</span><span class="p">)</span>
+</span></code></pre></div></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="16:1"><input checked="checked" id="__tabbed_16_1" name="__tabbed_16" type="radio" /><div class="tabbed-labels"><label for="__tabbed_16_1">Salida</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block"></div>
+</div>
+</div>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-37-1"><a id="__codelineno-37-1" name="__codelineno-37-1" href="#__codelineno-37-1"></a><span class="m">625</span>
+</span></code></pre></div>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-38-1"><a id="__codelineno-38-1" name="__codelineno-38-1" href="#__codelineno-38-1"></a><span class="n">c_splitter</span> <span class="o">=</span> <span class="n">CharacterTextSplitter</span><span class="p">(</span>
+</span><span id="__span-38-2"><a id="__codelineno-38-2" name="__codelineno-38-2" href="#__codelineno-38-2"></a>    <span class="n">chunk_size</span><span class="o">=</span><span class="mi">450</span><span class="p">,</span>
+</span><span id="__span-38-3"><a id="__codelineno-38-3" name="__codelineno-38-3" href="#__codelineno-38-3"></a>    <span class="n">chunk_overlap</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+</span><span id="__span-38-4"><a id="__codelineno-38-4" name="__codelineno-38-4" href="#__codelineno-38-4"></a>    <span class="n">separator</span><span class="o">=</span><span class="s1">&#39; &#39;</span>
+</span><span id="__span-38-5"><a id="__codelineno-38-5" name="__codelineno-38-5" href="#__codelineno-38-5"></a><span class="p">)</span>
+</span><span id="__span-38-6"><a id="__codelineno-38-6" name="__codelineno-38-6" href="#__codelineno-38-6"></a><span class="n">r_splitter</span> <span class="o">=</span> <span class="n">RecursiveCharacterTextSplitter</span><span class="p">(</span>
+</span><span id="__span-38-7"><a id="__codelineno-38-7" name="__codelineno-38-7" href="#__codelineno-38-7"></a>    <span class="n">chunk_size</span><span class="o">=</span><span class="mi">450</span><span class="p">,</span>
+</span><span id="__span-38-8"><a id="__codelineno-38-8" name="__codelineno-38-8" href="#__codelineno-38-8"></a>    <span class="n">chunk_overlap</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+</span><span id="__span-38-9"><a id="__codelineno-38-9" name="__codelineno-38-9" href="#__codelineno-38-9"></a>    <span class="n">separators</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;</span><span class="se">\n\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="s2">&quot; &quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">]</span>
+</span><span id="__span-38-10"><a id="__codelineno-38-10" name="__codelineno-38-10" href="#__codelineno-38-10"></a><span class="p">)</span>
+</span></code></pre></div>
+<p>Cuando especificamos <code>separators=["\n\n", "\n", " ", ""]</code>, significa que el splitter usa estos separadores en ese orden hasta que encuentra un tipo de separador que le sirva.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-39-1"><a id="__codelineno-39-1" name="__codelineno-39-1" href="#__codelineno-39-1"></a><span class="n">c_splitter</span><span class="o">.</span><span class="n">split_text</span><span class="p">(</span><span class="n">some_text</span><span class="p">)</span>
+</span><span id="__span-39-2"><a id="__codelineno-39-2" name="__codelineno-39-2" href="#__codelineno-39-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">IPython.display</span><span class="w"> </span><span class="kn">import</span> <span class="n">Markdown</span><span class="p">,</span> <span class="n">display</span>
+</span><span id="__span-39-3"><a id="__codelineno-39-3" name="__codelineno-39-3" href="#__codelineno-39-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">c_splitter</span><span class="o">.</span><span class="n">split_text</span><span class="p">(</span><span class="n">some_text</span><span class="p">))</span>
+</span><span id="__span-39-4"><a id="__codelineno-39-4" name="__codelineno-39-4" href="#__codelineno-39-4"></a><span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="n">c_splitter</span><span class="o">.</span><span class="n">split_text</span><span class="p">(</span><span class="n">some_text</span><span class="p">)[</span><span class="mi">0</span><span class="p">]))</span>
+</span><span id="__span-39-5"><a id="__codelineno-39-5" name="__codelineno-39-5" href="#__codelineno-39-5"></a><span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="n">c_splitter</span><span class="o">.</span><span class="n">split_text</span><span class="p">(</span><span class="n">some_text</span><span class="p">)[</span><span class="mi">1</span><span class="p">]))</span>
+</span></code></pre></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="17:1"><input checked="checked" id="__tabbed_17_1" name="__tabbed_17" type="radio" /><div class="tabbed-labels"><label for="__tabbed_17_1">Salida</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block"></div>
+</div>
+</div>
+<p><img alt="alt text" src="../../assets/images/recursive.png" /></p>
+<div class="grid cards">
+<ul>
+<li><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M308.5 135.3c7.1-6.3 9.9-16.2 6.2-25-2.3-5.3-4.8-10.5-7.6-15.5l-3.1-5.4c-3-5-6.3-9.9-9.8-14.6-5.7-7.6-15.7-10.1-24.7-7.1L241.3 77c-10.7-8.8-23-16-36.2-20.9l-6.1-29c-1.9-9.3-9.1-16.7-18.5-17.8-6.6-.9-13.3-1.3-20.1-1.3h-.7q-10.2 0-20.1 1.2c-9.4 1.1-16.6 8.6-18.5 17.8L115 56.1c-13.3 5-25.5 12.1-36.2 20.9l-28.3-9.2c-9-3-19-.5-24.7 7.1-3.5 4.7-6.8 9.6-9.9 14.6l-3 5.3c-2.8 5-5.3 10.2-7.6 15.6-3.7 8.7-.9 18.6 6.2 25l22.2 19.8c-1.1 6.7-1.7 13.7-1.7 20.8s.6 14.1 1.7 20.9l-22.2 19.8c-7.1 6.3-9.9 16.2-6.2 25 2.3 5.3 4.8 10.5 7.6 15.6l3 5.2c3 5.1 6.3 9.9 9.9 14.6 5.7 7.6 15.7 10.1 24.7 7.1l28.2-9.3c10.7 8.8 23 16 36.2 20.9l6.1 29.1c1.9 9.3 9.1 16.7 18.5 17.8q10.05 1.2 20.4 1.2c10.35 0 13.7-.4 20.4-1.2 9.4-1.1 16.6-8.6 18.5-17.8l6.1-29.1c13.3-5 25.5-12.1 36.2-20.9l28.2 9.3c9 3 19 .5 24.7-7.1 3.5-4.7 6.8-9.5 9.8-14.6l3.1-5.4c2.8-5 5.3-10.2 7.6-15.5 3.7-8.7.9-18.6-6.2-25l-22.2-19.8c1.1-6.8 1.7-13.8 1.7-20.9s-.6-14.1-1.7-20.9l22.2-19.8zM112 176a48 48 0 1 1 96 0 48 48 0 1 1-96 0m392.7 324.5c6.3 7.1 16.2 9.9 25 6.2 5.3-2.3 10.5-4.8 15.5-7.6l5.4-3.1c5-3 9.9-6.3 14.6-9.8 7.6-5.7 10.1-15.7 7.1-24.7l-9.3-28.2c8.8-10.7 16-23 20.9-36.2L613 391c9.3-1.9 16.7-9.1 17.8-18.5q1.2-10.05 1.2-20.4c0-10.35-.4-13.7-1.2-20.4-1.1-9.4-8.6-16.6-17.8-18.5l-29.1-6.2c-5-13.3-12.1-25.5-20.9-36.2l9.3-28.2c3-9 .5-19-7.1-24.7-4.7-3.5-9.6-6.8-14.6-9.9l-5.3-3c-5-2.8-10.2-5.3-15.6-7.6-8.7-3.7-18.6-.9-25 6.2l-19.8 22.2c-6.8-1.1-13.8-1.7-20.9-1.7s-14.1.6-20.9 1.7l-19.8-22.2c-6.3-7.1-16.2-9.9-25-6.2-5.3 2.3-10.5 4.8-15.6 7.6l-5.2 3c-5.1 3-9.9 6.3-14.6 9.9-7.6 5.7-10.1 15.7-7.1 24.7l9.3 28.2c-8.8 10.7-16 23-20.9 36.2l-29.1 6c-9.3 1.9-16.7 9.1-17.8 18.5q-1.2 10.05-1.2 20.4c0 10.35.4 13.7 1.2 20.4 1.1 9.4 8.6 16.6 17.8 18.5l29.1 6.1c5 13.3 12.1 25.5 20.9 36.2l-9.3 28.2c-3 9-.5 19 7.1 24.7 4.7 3.5 9.5 6.8 14.6 9.8l5.4 3.1c5 2.8 10.2 5.3 15.5 7.6 8.7 3.7 18.6.9 25-6.2l19.8-22.2c6.8 1.1 13.8 1.7 20.9 1.7s14.1-.6 20.9-1.7l19.8 22.2zM464 304a48 48 0 1 1 0 96 48 48 0 1 1 0-96"/></svg></span> <strong>Reto formativo</strong><br />
+<strong>Planteamiento</strong>:
+  Utiliza PyPDFLoader para cargar el documento <a href="../../assets/documents/attention.pdf">attention.pdf</a> u otro de tu preferencia.</li>
+<li>Usa <code>CharacterTextSplitter</code> y experimenta con diferentes parámetros, por ejemplo: 
+    <div class="language-python highlight"><pre><span></span><code><span id="__span-40-1"><a id="__codelineno-40-1" name="__codelineno-40-1" href="#__codelineno-40-1"></a><span class="n">separator</span><span class="o">=</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+</span><span id="__span-40-2"><a id="__codelineno-40-2" name="__codelineno-40-2" href="#__codelineno-40-2"></a><span class="n">chunk_size</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span>
+</span><span id="__span-40-3"><a id="__codelineno-40-3" name="__codelineno-40-3" href="#__codelineno-40-3"></a><span class="n">chunk_overlap</span><span class="o">=</span><span class="mi">150</span><span class="p">,</span>
+</span><span id="__span-40-4"><a id="__codelineno-40-4" name="__codelineno-40-4" href="#__codelineno-40-4"></a><span class="n">length_function</span><span class="o">=</span><span class="nb">len</span>
+</span></code></pre></div></li>
+<li>Visualiza el número de documentos cargados.</li>
+<li>¿Cuántas páginas tiene el documento?</li>
+</ul>
+</div>
+<h2 id="almacenamiento-en-la-base-de-datos-vectorial">Almacenamiento en la base de datos vectorial</h2>
+<p>El paso siguiente en la construcción de nuestro RAG (ver figura 2) consiste en crear representaciones vectoriales de los fragmentos. Las representaciones vectoriales de texto, o <em>embeddings</em>, son creadas a partir de modelos de lenguaje (LLM). Un <em>embedding</em> se genera utilizando un LLM que convierte texto en vectores numéricos, capturando el contexto y el significado semántico del texto. El flujo es mostrado en la figura:</p>
+<p><img alt="alt text" src="../image-1.png" /></p>
+<div class="admonition tip">
+<p class="admonition-title">Para aprender más</p>
+<p>Las bases de datos vectoriales son sistemas especializados en el almacenamiento, indexación y recuperación eficiente de vectores de alta dimensión. Estos vectores, que comúnmente representan características numéricas extraídas de datos como texto, imágenes, audio o video, permiten realizar búsquedas basadas en similitud (por ejemplo, utilizando distancia euclidiana, coseno o HNSW). A diferencia de las bases de datos tradicionales orientadas a registros, las bases de datos vectoriales están optimizadas para operaciones de búsqueda aproximada de vecinos más cercanos (Approximate Nearest Neighbor Search, ANNS), lo que las hace ideales para tareas de recuperación semántica, sistemas de recomendación, reconocimiento de patrones y aplicaciones en inteligencia artificial.</p>
+<p>Estos sistemas son clave en entornos de aprendizaje automático y procesamiento de lenguaje natural (PLN), donde se requiere comparar representaciones vectoriales de datos embebidos (embeddings). Algunas implementaciones populares incluyen FAISS (Facebook AI Similarity Search), Annoy (Spotify), Milvus y Weaviate, que ofrecen distintos enfoques y estructuras para manejar escalabilidad, latencia y precisión.</p>
+<p>Para profundizar en el tema, se recomienda la siguiente referencia técnica:<br />
+<strong>Johnson, J., Douze, M., &amp; Jégou, H. (2019). <a href="https://arxiv.org/abs/1702.08734">Billion-scale similarity search with GPUs</a></strong>. <em>arXiv preprint arXiv:1702.08734</em>.</p>
+</div>
+<h3 id="embeddings">Embeddings</h3>
+<p>Los embeddings son las representaciones vectoriales de los fragmentos de texto entregados por el <code>TextSplitter</code>. Textos similares tienen representaciones similares en el espacio de embeddings, lo que significa que podemos comparar estos vectores y encontrar fragmentos de texto que son similares o relevantes dada una consulta. Crearemos nuestros embeddings usando <code>OpenAIEmbeddings</code>.</p>
+<p>Veamos su funcionamiento con un ejemplo sencillo:
+<div class="language-python highlight"><pre><span></span><code><span id="__span-41-1"><a id="__codelineno-41-1" name="__codelineno-41-1" href="#__codelineno-41-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">dotenv</span><span class="w"> </span><span class="kn">import</span> <span class="n">load_dotenv</span>
+</span><span id="__span-41-2"><a id="__codelineno-41-2" name="__codelineno-41-2" href="#__codelineno-41-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+</span><span id="__span-41-3"><a id="__codelineno-41-3" name="__codelineno-41-3" href="#__codelineno-41-3"></a><span class="kn">from</span><span class="w"> </span><span class="nn">langchain_openai</span><span class="w"> </span><span class="kn">import</span> <span class="n">OpenAIEmbeddings</span>
+</span><span id="__span-41-4"><a id="__codelineno-41-4" name="__codelineno-41-4" href="#__codelineno-41-4"></a><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+</span><span id="__span-41-5"><a id="__codelineno-41-5" name="__codelineno-41-5" href="#__codelineno-41-5"></a><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.metrics.pairwise</span><span class="w"> </span><span class="kn">import</span> <span class="n">cosine_similarity</span>
+</span><span id="__span-41-6"><a id="__codelineno-41-6" name="__codelineno-41-6" href="#__codelineno-41-6"></a>
+</span><span id="__span-41-7"><a id="__codelineno-41-7" name="__codelineno-41-7" href="#__codelineno-41-7"></a><span class="c1"># Cargar variables de entorno (por ejemplo, OPENAI_API_KEY)</span>
+</span><span id="__span-41-8"><a id="__codelineno-41-8" name="__codelineno-41-8" href="#__codelineno-41-8"></a><span class="n">load_dotenv</span><span class="p">()</span>
+</span><span id="__span-41-9"><a id="__codelineno-41-9" name="__codelineno-41-9" href="#__codelineno-41-9"></a>
+</span><span id="__span-41-10"><a id="__codelineno-41-10" name="__codelineno-41-10" href="#__codelineno-41-10"></a><span class="c1"># Definir oraciones menos creativas con temas de comida/cocina y clima</span>
+</span><span id="__span-41-11"><a id="__codelineno-41-11" name="__codelineno-41-11" href="#__codelineno-41-11"></a><span class="n">sentence1</span> <span class="o">=</span> <span class="s2">&quot;I like pasta.&quot;</span>
+</span><span id="__span-41-12"><a id="__codelineno-41-12" name="__codelineno-41-12" href="#__codelineno-41-12"></a><span class="n">sentence2</span> <span class="o">=</span> <span class="s2">&quot;I like noodles.&quot;</span>
+</span><span id="__span-41-13"><a id="__codelineno-41-13" name="__codelineno-41-13" href="#__codelineno-41-13"></a><span class="n">sentence3</span> <span class="o">=</span> <span class="s2">&quot;The soup I made is bad.&quot;</span>
+</span><span id="__span-41-14"><a id="__codelineno-41-14" name="__codelineno-41-14" href="#__codelineno-41-14"></a><span class="n">sentence4</span> <span class="o">=</span> <span class="s2">&quot;The sky is blue.&quot;</span>
+</span><span id="__span-41-15"><a id="__codelineno-41-15" name="__codelineno-41-15" href="#__codelineno-41-15"></a>
+</span><span id="__span-41-16"><a id="__codelineno-41-16" name="__codelineno-41-16" href="#__codelineno-41-16"></a><span class="c1"># Lista de todas las oraciones</span>
+</span><span id="__span-41-17"><a id="__codelineno-41-17" name="__codelineno-41-17" href="#__codelineno-41-17"></a><span class="n">sentences</span> <span class="o">=</span> <span class="p">[</span><span class="n">sentence1</span><span class="p">,</span> <span class="n">sentence2</span><span class="p">,</span> <span class="n">sentence3</span><span class="p">,</span> <span class="n">sentence4</span><span class="p">]</span>
+</span><span id="__span-41-18"><a id="__codelineno-41-18" name="__codelineno-41-18" href="#__codelineno-41-18"></a>
+</span><span id="__span-41-19"><a id="__codelineno-41-19" name="__codelineno-41-19" href="#__codelineno-41-19"></a><span class="c1"># Inicializar embeddings de OpenAI</span>
+</span><span id="__span-41-20"><a id="__codelineno-41-20" name="__codelineno-41-20" href="#__codelineno-41-20"></a><span class="n">embeddings_model</span> <span class="o">=</span> <span class="n">OpenAIEmbeddings</span><span class="p">()</span> 
+</span><span id="__span-41-21"><a id="__codelineno-41-21" name="__codelineno-41-21" href="#__codelineno-41-21"></a>
+</span><span id="__span-41-22"><a id="__codelineno-41-22" name="__codelineno-41-22" href="#__codelineno-41-22"></a><span class="c1"># Generar embeddings para todas las oraciones</span>
+</span><span id="__span-41-23"><a id="__codelineno-41-23" name="__codelineno-41-23" href="#__codelineno-41-23"></a><span class="n">embeddings</span> <span class="o">=</span> <span class="n">embeddings_model</span><span class="o">.</span><span class="n">embed_documents</span><span class="p">(</span><span class="n">sentences</span><span class="p">)</span>
+</span><span id="__span-41-24"><a id="__codelineno-41-24" name="__codelineno-41-24" href="#__codelineno-41-24"></a>
+</span><span id="__span-41-25"><a id="__codelineno-41-25" name="__codelineno-41-25" href="#__codelineno-41-25"></a><span class="c1"># Convertir embeddings a un array de numpy para el cálculo de similitud</span>
+</span><span id="__span-41-26"><a id="__codelineno-41-26" name="__codelineno-41-26" href="#__codelineno-41-26"></a><span class="n">embeddings_array</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">embeddings</span><span class="p">)</span>
+</span><span id="__span-41-27"><a id="__codelineno-41-27" name="__codelineno-41-27" href="#__codelineno-41-27"></a>
+</span><span id="__span-41-28"><a id="__codelineno-41-28" name="__codelineno-41-28" href="#__codelineno-41-28"></a><span class="c1"># Calcular la similitud coseno entre todos los pares de oraciones</span>
+</span><span id="__span-41-29"><a id="__codelineno-41-29" name="__codelineno-41-29" href="#__codelineno-41-29"></a><span class="n">similarity_matrix</span> <span class="o">=</span> <span class="n">cosine_similarity</span><span class="p">(</span><span class="n">embeddings_array</span><span class="p">)</span>
+</span><span id="__span-41-30"><a id="__codelineno-41-30" name="__codelineno-41-30" href="#__codelineno-41-30"></a>
+</span><span id="__span-41-31"><a id="__codelineno-41-31" name="__codelineno-41-31" href="#__codelineno-41-31"></a><span class="c1"># Imprimir puntuaciones de similitud</span>
+</span><span id="__span-41-32"><a id="__codelineno-41-32" name="__codelineno-41-32" href="#__codelineno-41-32"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Cosine Similarity Matrix:&quot;</span><span class="p">)</span>
+</span><span id="__span-41-33"><a id="__codelineno-41-33" name="__codelineno-41-33" href="#__codelineno-41-33"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Sentences:&quot;</span><span class="p">)</span>
+</span><span id="__span-41-34"><a id="__codelineno-41-34" name="__codelineno-41-34" href="#__codelineno-41-34"></a><span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">sentence</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">sentences</span><span class="p">):</span>
+</span><span id="__span-41-35"><a id="__codelineno-41-35" name="__codelineno-41-35" href="#__codelineno-41-35"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2">. </span><span class="si">{</span><span class="n">sentence</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span><span id="__span-41-36"><a id="__codelineno-41-36" name="__codelineno-41-36" href="#__codelineno-41-36"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Similarity Scores:&quot;</span><span class="p">)</span>
+</span><span id="__span-41-37"><a id="__codelineno-41-37" name="__codelineno-41-37" href="#__codelineno-41-37"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">sentences</span><span class="p">)):</span>
+</span><span id="__span-41-38"><a id="__codelineno-41-38" name="__codelineno-41-38" href="#__codelineno-41-38"></a>    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">sentences</span><span class="p">)):</span>
+</span><span id="__span-41-39"><a id="__codelineno-41-39" name="__codelineno-41-39" href="#__codelineno-41-39"></a>        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Similarity between &#39;</span><span class="si">{</span><span class="n">sentences</span><span class="p">[</span><span class="n">i</span><span class="p">][:</span><span class="mi">50</span><span class="p">]</span><span class="si">}</span><span class="s2">...&#39; and &#39;</span><span class="si">{</span><span class="n">sentences</span><span class="p">[</span><span class="n">j</span><span class="p">][:</span><span class="mi">50</span><span class="p">]</span><span class="si">}</span><span class="s2">...&#39;: </span><span class="si">{</span><span class="n">similarity_matrix</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span></code></pre></div></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="18:1"><input checked="checked" id="__tabbed_18_1" name="__tabbed_18" type="radio" /><div class="tabbed-labels"><label for="__tabbed_18_1">Salida</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block"></div>
+</div>
+</div>
+<p><div class="language-bash highlight"><pre><span></span><code><span id="__span-42-1"><a id="__codelineno-42-1" name="__codelineno-42-1" href="#__codelineno-42-1"></a>Cosine<span class="w"> </span>Similarity<span class="w"> </span>Matrix:
+</span><span id="__span-42-2"><a id="__codelineno-42-2" name="__codelineno-42-2" href="#__codelineno-42-2"></a>Sentences:
+</span><span id="__span-42-3"><a id="__codelineno-42-3" name="__codelineno-42-3" href="#__codelineno-42-3"></a><span class="m">1</span>.<span class="w"> </span>I<span class="w"> </span>like<span class="w"> </span>pasta.
+</span><span id="__span-42-4"><a id="__codelineno-42-4" name="__codelineno-42-4" href="#__codelineno-42-4"></a><span class="m">2</span>.<span class="w"> </span>I<span class="w"> </span>like<span class="w"> </span>noodles.
+</span><span id="__span-42-5"><a id="__codelineno-42-5" name="__codelineno-42-5" href="#__codelineno-42-5"></a><span class="m">3</span>.<span class="w"> </span>The<span class="w"> </span>soup<span class="w"> </span>I<span class="w"> </span>made<span class="w"> </span>is<span class="w"> </span>bad.
+</span><span id="__span-42-6"><a id="__codelineno-42-6" name="__codelineno-42-6" href="#__codelineno-42-6"></a><span class="m">4</span>.<span class="w"> </span>The<span class="w"> </span>sky<span class="w"> </span>is<span class="w"> </span>blue.
+</span><span id="__span-42-7"><a id="__codelineno-42-7" name="__codelineno-42-7" href="#__codelineno-42-7"></a>
+</span><span id="__span-42-8"><a id="__codelineno-42-8" name="__codelineno-42-8" href="#__codelineno-42-8"></a>Similarity<span class="w"> </span>Scores:
+</span><span id="__span-42-9"><a id="__codelineno-42-9" name="__codelineno-42-9" href="#__codelineno-42-9"></a>Similarity<span class="w"> </span>between<span class="w"> </span><span class="s1">&#39;I like pasta....&#39;</span><span class="w"> </span>and<span class="w"> </span><span class="s1">&#39;I like noodles....&#39;</span>:<span class="w"> </span><span class="m">0</span>.9300
+</span><span id="__span-42-10"><a id="__codelineno-42-10" name="__codelineno-42-10" href="#__codelineno-42-10"></a>Similarity<span class="w"> </span>between<span class="w"> </span><span class="s1">&#39;I like pasta....&#39;</span><span class="w"> </span>and<span class="w"> </span><span class="s1">&#39;The soup I made is bad....&#39;</span>:<span class="w"> </span><span class="m">0</span>.6500
+</span><span id="__span-42-11"><a id="__codelineno-42-11" name="__codelineno-42-11" href="#__codelineno-42-11"></a>Similarity<span class="w"> </span>between<span class="w"> </span><span class="s1">&#39;I like pasta....&#39;</span><span class="w"> </span>and<span class="w"> </span><span class="s1">&#39;The sky is blue....&#39;</span>:<span class="w"> </span><span class="m">0</span>.6100
+</span><span id="__span-42-12"><a id="__codelineno-42-12" name="__codelineno-42-12" href="#__codelineno-42-12"></a>Similarity<span class="w"> </span>between<span class="w"> </span><span class="s1">&#39;I like noodles....&#39;</span><span class="w"> </span>and<span class="w"> </span><span class="s1">&#39;The soup I made is bad....&#39;</span>:<span class="w"> </span><span class="m">0</span>.6400
+</span><span id="__span-42-13"><a id="__codelineno-42-13" name="__codelineno-42-13" href="#__codelineno-42-13"></a>Similarity<span class="w"> </span>between<span class="w"> </span><span class="s1">&#39;I like noodles....&#39;</span><span class="w"> </span>and<span class="w"> </span><span class="s1">&#39;The sky is blue....&#39;</span>:<span class="w"> </span><span class="m">0</span>.6000
+</span><span id="__span-42-14"><a id="__codelineno-42-14" name="__codelineno-42-14" href="#__codelineno-42-14"></a>Similarity<span class="w"> </span>between<span class="w"> </span><span class="s1">&#39;The soup I made is bad....&#39;</span><span class="w"> </span>and<span class="w"> </span><span class="s1">&#39;The sky is blue....&#39;</span>:<span class="w"> </span><span class="m">0</span>.6700
+</span></code></pre></div>
+Con mayor similitud entre la oración 3 y la oración 4 debido a que ambas están relacionadas con el clima, e incluso una similitud mayor entre las oraciones 1 y 2 ya que están relacionadas con comidas italianas.</p>
+<p>El modelo <code>text-embedding-ada-002</code> es un Transformer optimizado para tareas de embeddings, entrenado en grandes cantidades de datos de texto para capturar relaciones semánticas.</p>
+<div class="admonition warning">
+<p class="admonition-title">Para tener en cuenta</p>
+<p>El modelo <code>text-embedding-ada-002</code> de OpenAI es un Transformer optimizado para tareas de embeddings, entrenado en grandes cantidades de datos de texto para capturar relaciones semánticas. El texto de entrada (por ejemplo, "I like pasta.") se tokeniza, dividiendo las palabras o subpalabras en unidades (tokens) que el modelo entiende.</p>
+<p>Cada token se convierte en un vector inicial (word embedding) basado en un vocabulario aprendido durante el entrenamiento.</p>
+<p>Un Transformer procesa los tokens a través de múltiples capas de redes neuronales.</p>
+<p>Las capas de atención capturan la importancia de cada token en relación con los demás, es decir, el contexto. Por ejemplo, en "I like pasta.", "pasta" se interpreta en el contexto de "like", lo que da un significado positivo.</p>
+<p>Esto produce representaciones contextuales que reflejan no solo las palabras individuales, sino también su relación en la frase. Las capas finales del modelo combinan las representaciones contextuales en un solo vector fijo (por ejemplo, 1536 dimensiones para <code>text-embedding-ada-002</code>).</p>
+<p>Este vector es una representación densa del significado semántico del texto, donde textos con significados similares (por ejemplo, "I like pasta." y "I like noodles.") tienen vectores cercanos en el espacio.</p>
+</div>
+<p>Hemos usado el producto escalar para compararlos, ya que este es proporcional a la distancia entre los vectores. Recordemos que dados dos vectores <span class="arithmatex">\(\mathbf{A}\)</span> y <span class="arithmatex">\(\mathbf{B}\)</span>, el producto escalar está definido como <span class="arithmatex">\(\mathbf{A} \cdot \mathbf{B} = AB \cos(\theta)\)</span>, como <span class="arithmatex">\(\cos(0) = 1\)</span> entonces los vectores son más cercanos entre más próximo esté este número de 1.</p>
+<h3 id="creando-la-vectorstore">Creando la Vectorstore</h3>
+<p>Existen diversas opciones de almacenamiento vectorial, cada una con características específicas. Algunas de las opciones más populares incluyen:</p>
+<ul>
+<li><strong>Pinecone</strong>: Ofrece un servicio escalable y rápido para almacenar y buscar vectores, ideal para aplicaciones en la nube.</li>
+<li><strong>Faiss</strong>: Un framework de Facebook AI Research que es eficiente para búsquedas de similitud y clustering, especialmente útil para grandes cantidades de datos.</li>
+<li><strong>Annoy</strong>: Desarrollado por Spotify, es adecuado para búsquedas aproximadas en grandes datasets, optimizando el uso de memoria.</li>
+<li><strong>Chroma</strong>: Es una opción versátil que puede funcionar tanto localmente como en la nube, facilitando la integración con aplicaciones que requieren búsquedas rápidas y eficientes.</li>
+</ul>
+<p>En este ejemplo, utilizaremos <strong>Chroma</strong> debido a su flexibilidad y facilidad de uso cuando se implementa localmente. Chroma permite almacenar los embeddings generados y realizar búsquedas de similitud de manera eficiente, lo cual es ideal para aplicaciones que requieren procesamiento rápido sin depender de servicios externos.</p>
+<p>Volvemos al ejemplo del PDF (<code>attention.pdf</code>). Lo cargaremos con <code>PyPDFLoader</code> y lo dividiremos en fragmentos usando <code>RecursiveCharacterTextSplitter</code>.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-43-1"><a id="__codelineno-43-1" name="__codelineno-43-1" href="#__codelineno-43-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">langchain.document_loaders</span><span class="w"> </span><span class="kn">import</span> <span class="n">PyPDFLoader</span>
+</span><span id="__span-43-2"><a id="__codelineno-43-2" name="__codelineno-43-2" href="#__codelineno-43-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">langchain.text_splitter</span><span class="w"> </span><span class="kn">import</span> <span class="n">RecursiveCharacterTextSplitter</span>
+</span><span id="__span-43-3"><a id="__codelineno-43-3" name="__codelineno-43-3" href="#__codelineno-43-3"></a>
+</span><span id="__span-43-4"><a id="__codelineno-43-4" name="__codelineno-43-4" href="#__codelineno-43-4"></a><span class="c1"># Cargamos el PDF</span>
+</span><span id="__span-43-5"><a id="__codelineno-43-5" name="__codelineno-43-5" href="#__codelineno-43-5"></a><span class="n">output_path</span> <span class="o">=</span> <span class="s2">&quot;.content/&quot;</span>
+</span><span id="__span-43-6"><a id="__codelineno-43-6" name="__codelineno-43-6" href="#__codelineno-43-6"></a><span class="n">file_path</span> <span class="o">=</span> <span class="n">output_path</span> <span class="o">+</span> <span class="s2">&quot;attention.pdf&quot;</span>
+</span><span id="__span-43-7"><a id="__codelineno-43-7" name="__codelineno-43-7" href="#__codelineno-43-7"></a><span class="n">loader</span> <span class="o">=</span> <span class="n">PyPDFLoader</span><span class="p">(</span><span class="n">file_path</span><span class="p">)</span>
+</span><span id="__span-43-8"><a id="__codelineno-43-8" name="__codelineno-43-8" href="#__codelineno-43-8"></a><span class="n">documents</span> <span class="o">=</span> <span class="n">loader</span><span class="o">.</span><span class="n">load</span><span class="p">()</span>
+</span><span id="__span-43-9"><a id="__codelineno-43-9" name="__codelineno-43-9" href="#__codelineno-43-9"></a>
+</span><span id="__span-43-10"><a id="__codelineno-43-10" name="__codelineno-43-10" href="#__codelineno-43-10"></a><span class="c1"># Dividimos en fragmentos</span>
+</span><span id="__span-43-11"><a id="__codelineno-43-11" name="__codelineno-43-11" href="#__codelineno-43-11"></a><span class="n">text_splitter</span> <span class="o">=</span> <span class="n">RecursiveCharacterTextSplitter</span><span class="p">(</span>
+</span><span id="__span-43-12"><a id="__codelineno-43-12" name="__codelineno-43-12" href="#__codelineno-43-12"></a>    <span class="n">chunk_size</span><span class="o">=</span><span class="mi">500</span><span class="p">,</span>  <span class="c1"># Tamaño de cada fragmento</span>
+</span><span id="__span-43-13"><a id="__codelineno-43-13" name="__codelineno-43-13" href="#__codelineno-43-13"></a>    <span class="n">chunk_overlap</span><span class="o">=</span><span class="mi">50</span>  <span class="c1"># Solapamiento entre fragmentos</span>
+</span><span id="__span-43-14"><a id="__codelineno-43-14" name="__codelineno-43-14" href="#__codelineno-43-14"></a><span class="p">)</span>
+</span><span id="__span-43-15"><a id="__codelineno-43-15" name="__codelineno-43-15" href="#__codelineno-43-15"></a><span class="n">split_docs</span> <span class="o">=</span> <span class="n">text_splitter</span><span class="o">.</span><span class="n">split_documents</span><span class="p">(</span><span class="n">documents</span><span class="p">)</span>
+</span><span id="__span-43-16"><a id="__codelineno-43-16" name="__codelineno-43-16" href="#__codelineno-43-16"></a>
+</span><span id="__span-43-17"><a id="__codelineno-43-17" name="__codelineno-43-17" href="#__codelineno-43-17"></a><span class="c1"># Verificamos cuántos fragmentos tenemos</span>
+</span><span id="__span-43-18"><a id="__codelineno-43-18" name="__codelineno-43-18" href="#__codelineno-43-18"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Se generaron </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">split_docs</span><span class="p">)</span><span class="si">}</span><span class="s2"> fragmentos del PDF.&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-44-1"><a id="__codelineno-44-1" name="__codelineno-44-1" href="#__codelineno-44-1"></a>Se<span class="w"> </span>generaron<span class="w"> </span><span class="m">93</span><span class="w"> </span>fragmentos<span class="w"> </span>del<span class="w"> </span>PDF.
+</span></code></pre></div>
+<p>A continuación, crearemos los embeddings.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-45-1"><a id="__codelineno-45-1" name="__codelineno-45-1" href="#__codelineno-45-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">langchain_openai</span><span class="w"> </span><span class="kn">import</span> <span class="n">OpenAIEmbeddings</span>
+</span><span id="__span-45-2"><a id="__codelineno-45-2" name="__codelineno-45-2" href="#__codelineno-45-2"></a>
+</span><span id="__span-45-3"><a id="__codelineno-45-3" name="__codelineno-45-3" href="#__codelineno-45-3"></a><span class="c1"># Configuramos el modelo de embeddings de OpenAI</span>
+</span><span id="__span-45-4"><a id="__codelineno-45-4" name="__codelineno-45-4" href="#__codelineno-45-4"></a><span class="n">embedding_model</span> <span class="o">=</span> <span class="n">OpenAIEmbeddings</span><span class="p">()</span>  <span class="c1"># Usa la variable de entorno OPENAI_API_KEY</span>
+</span><span id="__span-45-5"><a id="__codelineno-45-5" name="__codelineno-45-5" href="#__codelineno-45-5"></a>
+</span><span id="__span-45-6"><a id="__codelineno-45-6" name="__codelineno-45-6" href="#__codelineno-45-6"></a><span class="c1"># Probamos con un fragmento para verificar</span>
+</span><span id="__span-45-7"><a id="__codelineno-45-7" name="__codelineno-45-7" href="#__codelineno-45-7"></a><span class="n">sample_chunk</span> <span class="o">=</span> <span class="n">split_docs</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">page_content</span>
+</span><span id="__span-45-8"><a id="__codelineno-45-8" name="__codelineno-45-8" href="#__codelineno-45-8"></a><span class="n">sample_embedding</span> <span class="o">=</span> <span class="n">embedding_model</span><span class="o">.</span><span class="n">embed_query</span><span class="p">(</span><span class="n">sample_chunk</span><span class="p">)</span>
+</span><span id="__span-45-9"><a id="__codelineno-45-9" name="__codelineno-45-9" href="#__codelineno-45-9"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Dimensión del embedding: </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">sample_embedding</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span><span id="__span-45-10"><a id="__codelineno-45-10" name="__codelineno-45-10" href="#__codelineno-45-10"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Primeros 5 valores: </span><span class="si">{</span><span class="n">sample_embedding</span><span class="p">[:</span><span class="mi">5</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-46-1"><a id="__codelineno-46-1" name="__codelineno-46-1" href="#__codelineno-46-1"></a>Dimensión<span class="w"> </span>del<span class="w"> </span>embedding:<span class="w"> </span><span class="m">1536</span>
+</span><span id="__span-46-2"><a id="__codelineno-46-2" name="__codelineno-46-2" href="#__codelineno-46-2"></a>Primeros<span class="w"> </span><span class="m">5</span><span class="w"> </span>valores:<span class="w"> </span><span class="o">[</span>-0.012028052471578121,<span class="w"> </span><span class="m">0</span>.01199324894696474,<span class="w"> </span><span class="m">0</span>.017206797376275063,<span class="w"> </span>-0.027745263651013374,<span class="w"> </span>-0.0014739236794412136<span class="o">]</span>
+</span></code></pre></div>
+<h3 id="creando-labase-de-datos">Creando labase de datos</h3>
+<p>Guardaremos los fragmentos y sus embeddings generados por OpenAI en una vectorstore de <code>Chroma</code>.</p>
+<p>&amp; code: &amp;</p>
+<p>from langchain.vectorstores import Chroma</p>
+<h1 id="creamos-la-vectorstore-con-chroma">Creamos la vectorstore con Chroma</h1>
+<p>vectorstore = Chroma.from_documents(
+    documents=split_docs,  # Los fragmentos del PDF
+    embedding=embedding_model,  # Embeddings de OpenAI
+    persist_directory="./chroma_db_openai"  # Directorio para esta versión
+)</p>
+<h1 id="verificamos-cuantos-documentos-se-almacenaron">Verificamos cuántos documentos se almacenaron</h1>
+<p>print(f"Se almacenaron {vectorstore._collection.count()} fragmentos en la vectorstore.")</p>
+<p>&amp;salida&amp;
+Se almacenaron 93 fragmentos en la vectorstore.</p>
+<p>Con la vectorstore lista, podemos buscar fragmentos relevantes para una consulta como "attention mechanism".
+&amp; code &amp;</p>
+<h1 id="realizamos-una-busqueda-semantica">Realizamos una búsqueda semántica</h1>
+<p>query = "attention mechanism"
+results = vectorstore.similarity_search(query, k=3)  # Top 3 fragmentos más similares</p>
+<h1 id="mostramos-los-resultados">Mostramos los resultados</h1>
+<p>for i, result in enumerate(results):
+    print(f"Resultado {i + 1}:")
+    print(result.page_content)
+    print(f"Metadatos: {result.metadata}")
+    print("-" * 50)
+&amp; salida &amp;
+Resultado 1:
+tion models in various tasks, allowing modeling of dependencies without regard to their distance in
+the input or output sequences [2, 19]. In all but a few cases [27], however, such attention mechanisms
+are used in conjunction with a recurrent network.
+In this work we propose the Transformer, a model architecture eschewing recurrence and instead
+relying entirely on an attention mechanism to draw global dependencies between input and output.
+Metadatos: {'page': 1, 'page_label': '2', 'source': '.content/attention.pdf'}</p>
+<hr />
+<p>Resultado 2:
+but
+its
+application
+should
+be
+just
+-
+this
+is
+what
+we
+are
+missing
+,
+in
+my
+...</p>
+<h3 id="persistencia-de-la-vectorstore">Persistencia de la Vectorstore</h3>
+<p>La base de datos se guarda en <code>./chroma_db_openai</code>. Para carala en otros scripts, de esta manera no tendremosque pagar por los embedigs cada vez que un script requiera realizar querys sobre el documento</p>
+<h1 id="cargar-la-vectorstore-existente">Cargar la vectorstore existente</h1>
+<p>loaded_vectorstore = Chroma(
+    persist_directory="./chroma_db_openai",
+    embedding_function=embedding_model
+)</p>
+<h1 id="verificamos-que-se-cargo">Verificamos que se cargó</h1>
+<p>print(f"Fragmentos cargados desde disco: {loaded_vectorstore._collection.count()}")</p>
+<p>&amp;salida&amp;
+Fragmentos cargados desde disco: 93</p>
+<p>Veamos:</p>
+<p>query = "embeddings"
+results = loaded_vectorstore.similarity_search(query, k=3)  # Top 3 fragmentos más similares</p>
+<h1 id="mostramos-los-resultados_1">Mostramos los resultados</h1>
+<p>for i, result in enumerate(results):
+    print(f"Resultado {i + 1}:")
+    print(result.page_content)
+    print(f"Metadatos: {result.metadata}")
+    print("-" * 50)</p>
+<p>&amp;salida&amp;</p>
+<p>Resultado 1:
+Zhou, and Yoshua Bengio. A structured self-attentive sentence embedding. arXiv preprint
+arXiv:1703.03130, 2017.
+[23] Minh-Thang Luong, Quoc V . Le, Ilya Sutskever, Oriol Vinyals, and Lukasz Kaiser. Multi-task
+sequence to sequence learning. arXiv preprint arXiv:1511.06114, 2015.
+[24] Minh-Thang Luong, Hieu Pham, and Christopher D Manning. Effective approaches to attention-
+based neural machine translation. arXiv preprint arXiv:1508.04025, 2015.
+11
+Metadatos: {'page': 10, 'page_label': '11', 'source': '.content/attention.pdf'}</p>
+<hr />
+<p>Resultado 2:
+2006.
+[30] Ofir Press and Lior Wolf. Using the output embedding to improve language models. arXiv
+preprint arXiv:1608.05859, 2016.
+[31] Rico Sennrich, Barry Haddow, and Alexandra Birch. Neural machine translation of rare words
+with subword units. arXiv preprint arXiv:1508.07909, 2015.
+[32] Noam Shazeer, Azalia Mirhoseini, Krzysztof Maziarz, Andy Davis, Quoc Le, Geoffrey Hinton,
+and Jeff Dean. Outrageously large neural networks: The sparsely-gated mixture-of-experts
+Metadatos: {'page': 11, 'page_label': '12', 'source': '.content/attention.pdf'}</p>
+<hr />
+<p>...</p>
+<h2 id="retrievalqa">RetrievalQA</h2>
+<p>Combinaremos la vectorstore con un modelo de lenguaje de OpenAI (<code>gpt-3.5-turbo</code> por defecto) para responder preguntas. <code>RetrievalQA</code> buscará fragmentos relevantes en la vectorstore y los usará como contexto para generar respuestas.</p>
+<p>&amp; code &amp;
+from langchain.chains import RetrievalQA
+from langchain.chat_models import ChatOpenAI</p>
+<h1 id="configuramos-el-modelo-de-lenguaje">Configuramos el modelo de lenguaje</h1>
+<p>llm = ChatOpenAI(
+    model_name="gpt-3.5-turbo",
+    temperature=0  # Respuestas más precisas y menos creativas
+)</p>
+<h1 id="creamos-la-cadena-retrievalqa">Creamos la cadena RetrievalQA</h1>
+<p>qa_chain = RetrievalQA.from_chain_type(
+    llm=llm,
+    chain_type="stuff",  # Usa todos los fragmentos relevantes directamente
+    retriever=vectorstore.as_retriever(search_kwargs={"k": 3}),  # Top 3 fragmentos más similares
+    return_source_documents=True  # Devuelve los fragmentos usados como fuente
+)</p>
+<h2 id="preguntas-al-pdf">Preguntas al PDF</h2>
+<p>Ahora podemos preguntar algo sobre el contenido del PDF:</p>
+<p>Otra pregunta
+query2 = "¿Cómo se usa la atención ?"
+result2 = qa_chain({"query": query2})</p>
+<h1 id="mostramos-la-respuesta">Mostramos la respuesta</h1>
+<p>print("Respuesta:")
+print(result2["result"])
+print("\nFragmentos utilizados como fuente:")
+for i, doc in enumerate(result2["source_documents"]):
+    print(f"Fuente {i + 1}:")
+    print(doc.page_content)
+    print(f"Metadatos: {doc.metadata}")
+    print("-" * 50)</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../../Unidad2/unidad2/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Unidad 2">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Unidad 2
+              </div>
+            </div>
+          </a>
+        
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.footer", "content.code.copy"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js"></script>
+      
+        <script src="../../js/katex.js"></script>
+      
+    
+  </body>
+</html>
