@@ -1,23 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://sitename.example/</loc>
-         <lastmod>2025-06-09</lastmod>
+         <loc>https://introsoft-iud.github.io/Diplomado_IA_IUDigital/</loc>
+         <lastmod>2025-06-10</lastmod>
     </url>
     <url>
-         <loc>https://sitename.example/Unidad%201/</loc>
-         <lastmod>2025-06-09</lastmod>
+         <loc>https://introsoft-iud.github.io/Diplomado_IA_IUDigital/Unidad%201/</loc>
+         <lastmod>2025-06-10</lastmod>
     </url>
     <url>
-         <loc>https://sitename.example/Unidad2/unidad2/</loc>
-         <lastmod>2025-06-09</lastmod>
+         <loc>https://introsoft-iud.github.io/Diplomado_IA_IUDigital/Unidad2/unidad2/</loc>
+         <lastmod>2025-06-10</lastmod>
     </url>
     <url>
-         <loc>https://sitename.example/Unidad3/unidad3/</loc>
-         <lastmod>2025-06-09</lastmod>
+         <loc>https://introsoft-iud.github.io/Diplomado_IA_IUDigital/Unidad3/unidad3/</loc>
+         <lastmod>2025-06-10</lastmod>
     </url>
     <url>
-         <loc>https://sitename.example/assets/admonitions/</loc>
-         <lastmod>2025-06-09</lastmod>
+         <loc>https://introsoft-iud.github.io/Diplomado_IA_IUDigital/assets/admonitions/</loc>
+         <lastmod>2025-06-10</lastmod>
+    </url>
+    <url>
+         <loc>https://introsoft-iud.github.io/Diplomado_IA_IUDigital/assets/resources/conociemientosPrevios_foro/</loc>
+         <lastmod>2025-06-10</lastmod>
     </url>
 </urlset>
