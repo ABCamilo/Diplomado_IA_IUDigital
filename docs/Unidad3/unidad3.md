@@ -94,6 +94,8 @@ Comenzaremos experimentando con algunas de las herramientas de carga de document
 ![alt text](../assets/images/doc_loaders.png)
 *Fuente: [Curso "Chat with Your Data" de DeepLearning.AI](https://www.deeplearning.ai/short-courses/chat-with-your-data/).*
 
+COMENTARIO EDICIÓN: PROFE, ¿PUEDES VERIFICAR POR FAVOR LA URL DE ESTA IMAGEN? ESTÁ ROTA LA FUENTE
+
 En esencia, un Cargador de Documentos en LangChain es un componente que obtiene datos de una fuente especificada y los transforma en un formato estandarizado que LangChain puede entender y con el que puede trabajar. Este formato estandarizado es típicamente un objeto Documento.
 
 Una vez que un cargador de documentos ingiere datos, usualmente los transforma en uno o más objetos Documento. Piensa en esto como nuestro contenedor estandarizado para datos de texto. Un objeto Documento en LangChain consiste principalmente en dos atributos clave:
